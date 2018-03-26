@@ -1,0 +1,154 @@
+productes A2
+
+informacio doritos
+
+inicialitzar
+2 1 2
+3
+risketos 1.4 A1 2
+mountain_dew 2.3 B1 3
+doritos 1.3 A1 2
+
+informacio risketos
+
+productes A1
+
+carregar 3
+
+1 11:11:11 1
+doritos 55
+
+3 11:11:13 3
+doritos 10
+mountain_dew 2
+risketos 3
+
+2 11:11:12 2
+mountain_dew 10
+risketos 7
+
+simular pagament 
+2
+2 0
+1 1
+
+millor cami 1
+
+millor cami 3
+
+millor cami 2
+
+millor cami 4
+
+inicialitzar
+10 10 10
+15
+risketos 1.4 A3 2
+mountain_dew 2.3 B5 3
+doritos 1.3 A6 10
+nutella 4.3 A1 4
+pelotazos 2.4 E3 5
+fairy 3.5 A3 8
+kebab 3.4 H3 5
+sobrasada 5 H5 7
+formatge 10.3 C7 6
+paper 3 F8 4
+llenties 5 H8 3
+pestinyos 4 B2 4
+trompeta_morts 3 F1 3
+brou 2 I3 4
+vi_barat 1 I10 5
+
+informacio mountain_dew
+
+millor cami 1
+
+carregar 9
+
+1 17:43:22 4
+risketos 4
+nutella 8
+kebab 1
+vi_barat 5
+
+5 17:46:00 6
+sobrasada 10
+paper 4
+formatge 3 
+trompeta_morts 3
+fairy 2
+pelotazos 7
+
+2 17:43:23 4
+formatge 1
+kebab 1
+paper 1
+doritos 2
+
+3 17:45:03 5
+llenties 1
+nutella 3
+kebab 2
+doritos 1
+pestinyos 2
+
+4 17:45:59 10
+risketos 1
+mountain_dew 1
+doritos 1
+nutella 1
+brou 1
+fairy 1
+kebab 1
+sobrasada 1
+formatge 1
+paper 1
+
+6 17:46:01 1
+vi_barat 2
+
+7 17:46:02 3
+nutella 3
+sobrasada 3 
+trompeta_morts 1
+
+9 17:46:12 1
+brou 2
+
+8 17:46:10 3
+paper 4
+pestinyos 4
+pelotazos 1
+
+millor cami 1
+
+millor cami 8
+
+millor cami 4
+
+simular pagament 7
+10 0
+3 1
+2 3
+1 9
+2 4
+1 0
+2 1
+
+
+informacio pestinyos
+
+productes B2
+
+informacio trompeta_morts
+
+productes A5
+
+millor cami 9
+
+sortir
+
+
+
+
+

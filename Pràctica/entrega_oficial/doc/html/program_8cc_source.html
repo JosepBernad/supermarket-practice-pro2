@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Pràctica de PRO2. Supermercat.: Fitxer de Codi program.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica de PRO2. Supermercat.
+   &#160;<span id="projectnumber">versió dec-2015</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pàgina&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fitxers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Llista&#160;dels&#160;Fitxers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;Fitxers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tot</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fitxers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funcions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">program.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="program_8cc.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_conjunt__clients_8hh.html">Conjunt_clients.hh</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_conjunt__productes_8hh.html">Conjunt_productes.hh</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_supermercat_8hh.html">Supermercat.hh</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">    5</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordtype">string</span> p;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_supermercat.html">Supermercat</a> s;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_conjunt__productes.html">Conjunt_productes</a> cp;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_conjunt__productes.html">Conjunt_productes</a> cp_aux;   <span class="comment">//sempre buit</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_conjunt__clients.html">Conjunt_clients</a> cc;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_conjunt__clients.html">Conjunt_clients</a> cc_aux;     <span class="comment">//sempre buit</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> col,rengles, caixes, n;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    cin &gt;&gt; p;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> ini_supermercat, ini_clients;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    ini_supermercat = ini_clients = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">while</span> (p != <span class="stringliteral">&quot;sortir&quot;</span>) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">if</span> (p == <span class="stringliteral">&quot;inicialitzar&quot;</span>) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            ini_supermercat = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            ini_clients = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            cin &gt;&gt; rengles &gt;&gt; col &gt;&gt; caixes &gt;&gt; n;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            s.<a class="code" href="class_supermercat.html#ad983ec7f34920bbbd56225b6c21af2b3">afegir_parametres_supermercat</a>(rengles,col,caixes,n);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            cp = cp_aux;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            s.<a class="code" href="class_supermercat.html#abe76363df7d0d1a759a4539d70187204">afegir_n_productes</a>(n,cp);  </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p == <span class="stringliteral">&quot;carregar&quot;</span>) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordtype">int</span> n_clients;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            cin &gt;&gt; n_clients;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            cc = cc_aux;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span> (ini_supermercat)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                ini_clients = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                cc.<a class="code" href="class_conjunt__clients.html#adb51222eb8d58efbf90a6229409d88d2">afegir_n_clients</a>(n_clients, cp);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p == <span class="stringliteral">&quot;informacio&quot;</span>) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">string</span> id;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            cin &gt;&gt; id;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;informacio &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span> (ini_supermercat)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                cp.<a class="code" href="class_conjunt__productes.html#a881cfe5494d2fac0354fdc82636fc5ff">informacio_producte</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p == <span class="stringliteral">&quot;productes&quot;</span>) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">string</span> <a class="code" href="structseccio.html">seccio</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            cin &gt;&gt; seccio;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;productes &quot;</span> &lt;&lt; seccio &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span> (ini_supermercat)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">if</span> ((seccio[0] - <span class="charliteral">&#39;A&#39;</span> &gt; rengles) or (col - <span class="keywordtype">int</span>(seccio[1]-<span class="charliteral">&#39;0&#39;</span>) &lt; 0)) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    cout &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    s.<a class="code" href="class_supermercat.html#add121e2ed13fa94e85accf3dc60cfa44">productes_seccio</a>(seccio);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p == <span class="stringliteral">&quot;millor&quot;</span>) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            cin &gt;&gt; p;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span> (p == <span class="stringliteral">&quot;cami&quot;</span>) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordtype">int</span> comprador_id;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                cin &gt;&gt; comprador_id;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;millor cami &quot;</span> &lt;&lt; comprador_id &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">if</span> (ini_supermercat and ini_clients)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    cc.<a class="code" href="class_conjunt__clients.html#a1ee4708cf975dc683f15f7cfb60cb146">consultar_millor_cami_client</a>(comprador_id,col);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="comment">//cout &lt;&lt; &quot;Supermercat: &quot; &lt;&lt; ini_supermercat &lt;&lt; &quot; - Clients: &quot; &lt;&lt; ini_clients &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    cout &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">else</span> cout &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p == <span class="stringliteral">&quot;simular&quot;</span>) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            cin &gt;&gt; p;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span> (p == <span class="stringliteral">&quot;pagament&quot;</span>) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;simular pagament:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">if</span>(ini_supermercat and ini_clients)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    <span class="keywordtype">int</span> n_simulacions;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    cin &gt;&gt; n_simulacions;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    s.<a class="code" href="class_supermercat.html#aac66c4aa58a3d095f4baa10a3ea05f1b">simulacio</a>(n_simulacions,cc);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    cout &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">else</span> cout &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">else</span> cout &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        cin &gt;&gt; p;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="ttc" id="_supermercat_8hh_html"><div class="ttname"><a href="_supermercat_8hh.html">Supermercat.hh</a></div><div class="ttdoc">Classe Supermercat. </div></div>
+<div class="ttc" id="class_conjunt__clients_html"><div class="ttname"><a href="class_conjunt__clients.html">Conjunt_clients</a></div><div class="ttdoc">Respresenta un Conjunt de clients com a contenidor de Clients. </div><div class="ttdef"><b>Definition:</b> <a href="_conjunt__clients_8hh_source.html#l00018">Conjunt_clients.hh:18</a></div></div>
+<div class="ttc" id="structseccio_html"><div class="ttname"><a href="structseccio.html">seccio</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8hh_source.html#l00024">Client.hh:24</a></div></div>
+<div class="ttc" id="_conjunt__clients_8hh_html"><div class="ttname"><a href="_conjunt__clients_8hh.html">Conjunt_clients.hh</a></div><div class="ttdoc">Classe Conjunt_clients. </div></div>
+<div class="ttc" id="class_conjunt__productes_html"><div class="ttname"><a href="class_conjunt__productes.html">Conjunt_productes</a></div><div class="ttdoc">Respresenta un Conjunt de productes con a contenidor de Productes. </div><div class="ttdef"><b>Definition:</b> <a href="_conjunt__productes_8hh_source.html#l00017">Conjunt_productes.hh:17</a></div></div>
+<div class="ttc" id="class_conjunt__clients_html_adb51222eb8d58efbf90a6229409d88d2"><div class="ttname"><a href="class_conjunt__clients.html#adb51222eb8d58efbf90a6229409d88d2">Conjunt_clients::afegir_n_clients</a></div><div class="ttdeci">void afegir_n_clients(int l, Conjunt_productes &amp;c)</div><div class="ttdoc">Imprimeix per pantalla el cam� m�s curt per agafar tots els productes. </div><div class="ttdef"><b>Definition:</b> <a href="_conjunt__clients_8cc_source.html#l00076">Conjunt_clients.cc:76</a></div></div>
+<div class="ttc" id="class_conjunt__productes_html_a881cfe5494d2fac0354fdc82636fc5ff"><div class="ttname"><a href="class_conjunt__productes.html#a881cfe5494d2fac0354fdc82636fc5ff">Conjunt_productes::informacio_producte</a></div><div class="ttdeci">void informacio_producte(string producte_id)</div><div class="ttdoc">Afegeix un producte al conjunt de productes a partir dels seus atributs. </div><div class="ttdef"><b>Definition:</b> <a href="_conjunt__productes_8cc_source.html#l00020">Conjunt_productes.cc:20</a></div></div>
+<div class="ttc" id="class_supermercat_html_abe76363df7d0d1a759a4539d70187204"><div class="ttname"><a href="class_supermercat.html#abe76363df7d0d1a759a4539d70187204">Supermercat::afegir_n_productes</a></div><div class="ttdeci">void afegir_n_productes(int n, Conjunt_productes &amp;cp)</div><div class="ttdoc">Imprimeix per pantalla els productes d&#39;una determinada seccio. </div><div class="ttdef"><b>Definition:</b> <a href="_supermercat_8cc_source.html#l00067">Supermercat.cc:67</a></div></div>
+<div class="ttc" id="class_supermercat_html_aac66c4aa58a3d095f4baa10a3ea05f1b"><div class="ttname"><a href="class_supermercat.html#aac66c4aa58a3d095f4baa10a3ea05f1b">Supermercat::simulacio</a></div><div class="ttdeci">void simulacio(int n, Conjunt_clients &amp;c)</div><div class="ttdoc">Actualitza les caixes a la hora actual. </div><div class="ttdef"><b>Definition:</b> <a href="_supermercat_8cc_source.html#l00209">Supermercat.cc:209</a></div></div>
+<div class="ttc" id="program_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="program_8cc_source.html#l00005">program.cc:5</a></div></div>
+<div class="ttc" id="class_conjunt__clients_html_a1ee4708cf975dc683f15f7cfb60cb146"><div class="ttname"><a href="class_conjunt__clients.html#a1ee4708cf975dc683f15f7cfb60cb146">Conjunt_clients::consultar_millor_cami_client</a></div><div class="ttdeci">void consultar_millor_cami_client(const int identificador, const int columnes)</div><div class="ttdoc">Retorna el temps que es trigara en cobrar a Client. </div><div class="ttdef"><b>Definition:</b> <a href="_conjunt__clients_8cc_source.html#l00053">Conjunt_clients.cc:53</a></div></div>
+<div class="ttc" id="class_supermercat_html_ad983ec7f34920bbbd56225b6c21af2b3"><div class="ttname"><a href="class_supermercat.html#ad983ec7f34920bbbd56225b6c21af2b3">Supermercat::afegir_parametres_supermercat</a></div><div class="ttdeci">void afegir_parametres_supermercat(int r, int col, int x, int n)</div><div class="ttdoc">Destructora per defecte. </div><div class="ttdef"><b>Definition:</b> <a href="_supermercat_8cc_source.html#l00024">Supermercat.cc:24</a></div></div>
+<div class="ttc" id="_conjunt__productes_8hh_html"><div class="ttname"><a href="_conjunt__productes_8hh.html">Conjunt_productes.hh</a></div><div class="ttdoc">Classe Conjunt_productes. </div></div>
+<div class="ttc" id="class_supermercat_html_add121e2ed13fa94e85accf3dc60cfa44"><div class="ttname"><a href="class_supermercat.html#add121e2ed13fa94e85accf3dc60cfa44">Supermercat::productes_seccio</a></div><div class="ttdeci">void productes_seccio(string seccio)</div><div class="ttdoc">Simula diferents configuracions amb x caixes rapides i y caixes normals. </div><div class="ttdef"><b>Definition:</b> <a href="_supermercat_8cc_source.html#l00034">Supermercat.cc:34</a></div></div>
+<div class="ttc" id="class_supermercat_html"><div class="ttname"><a href="class_supermercat.html">Supermercat</a></div><div class="ttdoc">Respresenta un Supermercat com a contenidor de Matriu de sets i un vector de Caixes. </div><div class="ttdef"><b>Definition:</b> <a href="_supermercat_8hh_source.html#l00027">Supermercat.hh:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat a Dc Dec 9 2015 20:45:00 per a Pràctica de PRO2. Supermercat. per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

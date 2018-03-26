@@ -1,0 +1,169 @@
+\hypertarget{_client_8cc}{\section{Referència del Fitxer Client.\-cc}
+\label{_client_8cc}\index{Client.\-cc@{Client.\-cc}}
+}
+Inclou el graf de dependències per a Client.\-cc\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{_client_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funcions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_client_8cc_a242d0f8a1d76d9990a9757ea9d5045a5}{calcula\-\_\-cami} (const vector$<$ \hyperlink{structseccio}{seccio} $>$ \&productes, int i, const int columnes)
+\item 
+void \hyperlink{_client_8cc_a863e18eda8214bd7b937afca28203350}{canvi} (vector$<$ \hyperlink{structseccio}{seccio} $>$ \&v, int a, int b)
+\item 
+bool \hyperlink{_client_8cc_a0ee569d71274691654f93b828db05bc4}{ordre\-\_\-lexicografic} (const vector$<$ \hyperlink{structseccio}{seccio} $>$ \&a, const vector$<$ \hyperlink{structseccio}{seccio} $>$ \&b)
+\item 
+void \hyperlink{_client_8cc_a46dcbde0b35706040fdc7644269132be}{consultar\-\_\-millor\-\_\-cami\-\_\-aux} (vector$<$ \hyperlink{structseccio}{seccio} $>$ \&productes, int i, vector$<$ \hyperlink{structseccio}{seccio} $>$ \&vector\-\_\-aux, int \&min, const int columnes, int actual)
+\item 
+pair$<$ int, int $>$ \hyperlink{_client_8cc_aa1c79131574379b4cd989a7ef172990d}{cas\-\_\-extrem} (const vector$<$ \hyperlink{structseccio}{seccio} $>$ \&productes, const int columnes)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentació de les Funcions}
+\hypertarget{_client_8cc_a242d0f8a1d76d9990a9757ea9d5045a5}{\index{Client.\-cc@{Client.\-cc}!calcula\-\_\-cami@{calcula\-\_\-cami}}
+\index{calcula\-\_\-cami@{calcula\-\_\-cami}!Client.cc@{Client.\-cc}}
+\subsubsection[{calcula\-\_\-cami}]{\setlength{\rightskip}{0pt plus 5cm}int calcula\-\_\-cami (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf seccio} $>$ \&}]{productes, }
+\item[{int}]{i, }
+\item[{const int}]{columnes}
+\end{DoxyParamCaption}
+)}}\label{_client_8cc_a242d0f8a1d76d9990a9757ea9d5045a5}
+
+
+Definició a la línia 128 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+128                                                                             \{
+129     \textcolor{keywordtype}{int} res = 0;
+130     \textcolor{keywordflow}{if} (i == 0) res += (abs(productes[i].x - \textcolor{charliteral}{'A'}) + abs(productes[i].y - 1));
+131     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i == productes.size()) res += (abs(productes[i-1].x - \textcolor{charliteral}{'A'}) + abs(productes[i-1].y - columnes))
+      ;
+132     \textcolor{keywordflow}{else} res += (abs(productes[i-1].x - productes[i].x) + abs(productes[i-1].y - productes[i].y));
+133     \textcolor{keywordflow}{return} res;
+134 \}
+\end{DoxyCode}
+\hypertarget{_client_8cc_a863e18eda8214bd7b937afca28203350}{\index{Client.\-cc@{Client.\-cc}!canvi@{canvi}}
+\index{canvi@{canvi}!Client.cc@{Client.\-cc}}
+\subsubsection[{canvi}]{\setlength{\rightskip}{0pt plus 5cm}void canvi (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf seccio} $>$ \&}]{v, }
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}}\label{_client_8cc_a863e18eda8214bd7b937afca28203350}
+
+
+Definició a la línia 136 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+136                                             \{
+137     \hyperlink{structseccio}{seccio} aux;
+138     aux = v[a];
+139     v[a] = v[b];
+140     v[b] = aux;
+141 \}
+\end{DoxyCode}
+\hypertarget{_client_8cc_a0ee569d71274691654f93b828db05bc4}{\index{Client.\-cc@{Client.\-cc}!ordre\-\_\-lexicografic@{ordre\-\_\-lexicografic}}
+\index{ordre\-\_\-lexicografic@{ordre\-\_\-lexicografic}!Client.cc@{Client.\-cc}}
+\subsubsection[{ordre\-\_\-lexicografic}]{\setlength{\rightskip}{0pt plus 5cm}bool ordre\-\_\-lexicografic (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf seccio} $>$ \&}]{a, }
+\item[{const vector$<$ {\bf seccio} $>$ \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_client_8cc_a0ee569d71274691654f93b828db05bc4}
+
+
+Definició a la línia 144 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+144                                                                           \{
+145     \textcolor{keywordtype}{int} i = 0;
+146     \textcolor{keywordflow}{while} (i != a.size()) \{
+147         \textcolor{keywordflow}{if} (a[i].x < b[i].x) \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+148         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (a[i].x > b[i].x) \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+149   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (a[i].y < b[i].y) \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+150   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (a[i].y > b[i].y) \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+151         \textcolor{keywordflow}{else} i++;
+152     \}
+153     \textcolor{comment}{//Cas que siguin iguals (que mai es donara)}
+154     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+155 \}
+\end{DoxyCode}
+\hypertarget{_client_8cc_a46dcbde0b35706040fdc7644269132be}{\index{Client.\-cc@{Client.\-cc}!consultar\-\_\-millor\-\_\-cami\-\_\-aux@{consultar\-\_\-millor\-\_\-cami\-\_\-aux}}
+\index{consultar\-\_\-millor\-\_\-cami\-\_\-aux@{consultar\-\_\-millor\-\_\-cami\-\_\-aux}!Client.cc@{Client.\-cc}}
+\subsubsection[{consultar\-\_\-millor\-\_\-cami\-\_\-aux}]{\setlength{\rightskip}{0pt plus 5cm}void consultar\-\_\-millor\-\_\-cami\-\_\-aux (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf seccio} $>$ \&}]{productes, }
+\item[{int}]{i, }
+\item[{vector$<$ {\bf seccio} $>$ \&}]{vector\-\_\-aux, }
+\item[{int \&}]{min, }
+\item[{const int}]{columnes, }
+\item[{int}]{actual}
+\end{DoxyParamCaption}
+)}}\label{_client_8cc_a46dcbde0b35706040fdc7644269132be}
+
+
+Definició a la línia 157 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+157                                                                                                            
+                                  \{
+158     \textcolor{keywordflow}{if} (i != productes.size()) \{
+159         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = i; j < productes.size(); j++) \{
+160             \hyperlink{_client_8cc_a863e18eda8214bd7b937afca28203350}{canvi}(productes, i, j);
+161             \textcolor{keywordtype}{int} aux = \hyperlink{_client_8cc_a242d0f8a1d76d9990a9757ea9d5045a5}{calcula\_cami}(productes,i,columnes);
+162             actual += aux;
+163             \textcolor{keywordflow}{if} (min >=actual) \hyperlink{_client_8cc_a46dcbde0b35706040fdc7644269132be}{consultar\_millor\_cami\_aux}(productes, i+1, vector\_aux
+      , min, columnes, actual);
+164             actual -= aux;
+165             \hyperlink{_client_8cc_a863e18eda8214bd7b937afca28203350}{canvi}(productes,i,j);
+166         \}
+167     \}
+168     \textcolor{keywordflow}{else} \{
+169         \textcolor{keywordtype}{int} aux = \hyperlink{_client_8cc_a242d0f8a1d76d9990a9757ea9d5045a5}{calcula\_cami}(productes,productes.size(),columnes);
+170         actual += aux;
+171         \textcolor{keywordflow}{if} (min > actual) \{
+172             min = actual;
+173             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < productes.size(); i++) vector\_aux[i] = productes[i];
+174         \}
+175         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (min == actual) \{
+176             \textcolor{keywordflow}{if} (\hyperlink{_client_8cc_a0ee569d71274691654f93b828db05bc4}{ordre\_lexicografic}(productes, vector\_aux)) \{
+177                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < productes.size(); i++) vector\_aux[i] = productes[i];
+178             \}
+179         \}
+180         actual -= aux;
+181     \}
+182 \}
+\end{DoxyCode}
+\hypertarget{_client_8cc_aa1c79131574379b4cd989a7ef172990d}{\index{Client.\-cc@{Client.\-cc}!cas\-\_\-extrem@{cas\-\_\-extrem}}
+\index{cas\-\_\-extrem@{cas\-\_\-extrem}!Client.cc@{Client.\-cc}}
+\subsubsection[{cas\-\_\-extrem}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$int,int$>$ cas\-\_\-extrem (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf seccio} $>$ \&}]{productes, }
+\item[{const int}]{columnes}
+\end{DoxyParamCaption}
+)}}\label{_client_8cc_aa1c79131574379b4cd989a7ef172990d}
+
+
+Definició a la línia 185 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+185                                                                              \{
+186     \textcolor{comment}{//Funció auxiliar per mirar si tenim productes a A1 o Acolumnes}
+187     \textcolor{keywordtype}{int} j = 0;
+188     \textcolor{keywordtype}{int} i = productes.size();
+189     \textcolor{keywordflow}{if} (productes[0].x == \textcolor{charliteral}{'A'} and productes[0].y == 1) j++;
+190     \textcolor{keywordflow}{if} (productes[i-1].x == \textcolor{charliteral}{'A'} and productes[i-1].y == columnes) i--;
+191     \textcolor{keywordflow}{return} make\_pair(j,i);
+192 \}
+\end{DoxyCode}

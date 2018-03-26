@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Pràctica de PRO2. Supermercat.: Fitxer de Codi Supermercat.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica de PRO2. Supermercat.
+   &#160;<span id="projectnumber">versió dec-2015</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pàgina&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fitxers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Llista&#160;dels&#160;Fitxers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;Fitxers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tot</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fitxers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funcions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Supermercat.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_supermercat_8hh.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef SUPERMERCAT_HH</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERMERCAT_HH</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_conjunt__clients_8hh.html">Conjunt_clients.hh</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_conjunt__productes_8hh.html">Conjunt_productes.hh</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_caixa.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_caixa.html">Caixa</a>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_caixa.html#af62e7e1b599b3e57cb0f2f961335f914">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_caixa.html#af62e7e1b599b3e57cb0f2f961335f914">n_clients</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_caixa.html#a1bdc14d5913064368efb726816d76d0c">   20</a></span>&#160;    <a class="code" href="class_temps.html">Temps</a> <a class="code" href="struct_caixa.html#a1bdc14d5913064368efb726816d76d0c">instant_proxim</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_supermercat.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_supermercat.html">Supermercat</a>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">//1 &lt;= Rengles &lt;= 26</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">//1 &lt;= columnes &lt;= 9</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">//1 &lt;= caixes &lt;= 20</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> rengles;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> nombre_productes;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> columnes;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> total_caixes;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> nombre_clients;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> nombre_caixes_rapides;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> nombre_caixes_normals;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    vector&lt;vector&lt;set&lt;string&gt; &gt; &gt; seccions;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    vector&lt;Caixa&gt; caixes;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//Constructores</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="class_supermercat.html">Supermercat</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="class_supermercat.html">Supermercat</a>(<span class="keywordtype">int</span> rengles_p, <span class="keywordtype">int</span> columnes_p, <span class="keywordtype">int</span> total_caixes_p, <span class="keywordtype">int</span> nombre_productes_p);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//Destructores</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ~<a class="code" href="class_supermercat.html">Supermercat</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//Modificadores</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> afegir_parametres_supermercat(<span class="keywordtype">int</span> r,<span class="keywordtype">int</span> col,<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//Entrada/Sortida</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> actualitza(<a class="code" href="class_temps.html">Temps</a> hora);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> assigna_caixa(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> n, <a class="code" href="class_client.html">Client</a>&amp; c);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> simulacio(<span class="keywordtype">int</span> n, <a class="code" href="class_conjunt__clients.html">Conjunt_clients</a>&amp; c);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> productes_seccio(<span class="keywordtype">string</span> <a class="code" href="structseccio.html">seccio</a>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     <span class="keywordtype">void</span> afegir_n_productes(<span class="keywordtype">int</span> n, <a class="code" href="class_conjunt__productes.html">Conjunt_productes</a>&amp; cp);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="struct_caixa_html"><div class="ttname"><a href="struct_caixa.html">Caixa</a></div><div class="ttdef"><b>Definition:</b> <a href="_supermercat_8hh_source.html#l00018">Supermercat.hh:18</a></div></div>
+<div class="ttc" id="class_conjunt__clients_html"><div class="ttname"><a href="class_conjunt__clients.html">Conjunt_clients</a></div><div class="ttdoc">Respresenta un Conjunt de clients com a contenidor de Clients. </div><div class="ttdef"><b>Definition:</b> <a href="_conjunt__clients_8hh_source.html#l00018">Conjunt_clients.hh:18</a></div></div>
+<div class="ttc" id="structseccio_html"><div class="ttname"><a href="structseccio.html">seccio</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8hh_source.html#l00024">Client.hh:24</a></div></div>
+<div class="ttc" id="struct_caixa_html_a1bdc14d5913064368efb726816d76d0c"><div class="ttname"><a href="struct_caixa.html#a1bdc14d5913064368efb726816d76d0c">Caixa::instant_proxim</a></div><div class="ttdeci">Temps instant_proxim</div><div class="ttdef"><b>Definition:</b> <a href="_supermercat_8hh_source.html#l00020">Supermercat.hh:20</a></div></div>
+<div class="ttc" id="class_client_html"><div class="ttname"><a href="class_client.html">Client</a></div><div class="ttdoc">Respresenta un Client com a contenidor de Seccions i Temps. </div><div class="ttdef"><b>Definition:</b> <a href="_client_8hh_source.html#l00029">Client.hh:29</a></div></div>
+<div class="ttc" id="_conjunt__clients_8hh_html"><div class="ttname"><a href="_conjunt__clients_8hh.html">Conjunt_clients.hh</a></div><div class="ttdoc">Classe Conjunt_clients. </div></div>
+<div class="ttc" id="class_conjunt__productes_html"><div class="ttname"><a href="class_conjunt__productes.html">Conjunt_productes</a></div><div class="ttdoc">Respresenta un Conjunt de productes con a contenidor de Productes. </div><div class="ttdef"><b>Definition:</b> <a href="_conjunt__productes_8hh_source.html#l00017">Conjunt_productes.hh:17</a></div></div>
+<div class="ttc" id="struct_caixa_html_af62e7e1b599b3e57cb0f2f961335f914"><div class="ttname"><a href="struct_caixa.html#af62e7e1b599b3e57cb0f2f961335f914">Caixa::n_clients</a></div><div class="ttdeci">int n_clients</div><div class="ttdef"><b>Definition:</b> <a href="_supermercat_8hh_source.html#l00019">Supermercat.hh:19</a></div></div>
+<div class="ttc" id="class_temps_html"><div class="ttname"><a href="class_temps.html">Temps</a></div><div class="ttdoc">Respresentacio del temps en hores,minuts i segons. </div><div class="ttdef"><b>Definition:</b> <a href="_temps_8hh_source.html#l00014">Temps.hh:14</a></div></div>
+<div class="ttc" id="_conjunt__productes_8hh_html"><div class="ttname"><a href="_conjunt__productes_8hh.html">Conjunt_productes.hh</a></div><div class="ttdoc">Classe Conjunt_productes. </div></div>
+<div class="ttc" id="class_supermercat_html"><div class="ttname"><a href="class_supermercat.html">Supermercat</a></div><div class="ttdoc">Respresenta un Supermercat com a contenidor de Matriu de sets i un vector de Caixes. </div><div class="ttdef"><b>Definition:</b> <a href="_supermercat_8hh_source.html#l00027">Supermercat.hh:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat a Dc Dec 9 2015 20:45:00 per a Pràctica de PRO2. Supermercat. per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

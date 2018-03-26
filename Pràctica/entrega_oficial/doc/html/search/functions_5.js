@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['main',['main',['../program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'program.cc']]],
+  ['modifica_5fsegons',['modifica_segons',['../class_temps.html#aa8a974348f379f4028bf7a382dbd1848',1,'Temps']]],
+  ['modifica_5ftemps',['modifica_temps',['../class_temps.html#a7870740e44a9a07df7eb7558822e426e',1,'Temps']]],
+  ['modificar_5fcaixa',['modificar_caixa',['../class_client.html#aa3c794239505f1996f1468a542548461',1,'Client']]],
+  ['modificar_5fcaixa_5fassignada_5fi_5fessim',['modificar_caixa_assignada_i_essim',['../class_conjunt__clients.html#adb1f2032dbab3cbd57d648b5134ffeff',1,'Conjunt_clients']]],
+  ['modificar_5fclient_5fi_5fessim',['modificar_client_i_essim',['../class_conjunt__clients.html#af3d7d4fc375c3a6fc8caf8aac7cfc3f9',1,'Conjunt_clients']]],
+  ['modificar_5fhores',['modificar_hores',['../class_temps.html#aac111fd4d07983daa42e016ab60d6795',1,'Temps']]],
+  ['modificar_5finstant_5facabament',['modificar_instant_acabament',['../class_client.html#abb16904da37ead035413d5595889af2f',1,'Client']]],
+  ['modificar_5finstant_5facabament_5fi_5fessim',['modificar_instant_acabament_i_essim',['../class_conjunt__clients.html#a2585d06a968c166a7bb938188fc72dc6',1,'Conjunt_clients']]],
+  ['modificar_5finstant_5fcaixa',['modificar_instant_caixa',['../class_client.html#a1718ce0ec5713509921963aaa48f6417',1,'Client']]],
+  ['modificar_5finstant_5fcaixa_5fi_5fessim',['modificar_instant_caixa_i_essim',['../class_conjunt__clients.html#a6a79dfff083b376c8d1a95fc210a1210',1,'Conjunt_clients']]],
+  ['modificar_5finstant_5fcua',['modificar_instant_cua',['../class_client.html#afb5ec40f5410ec9766ca3c225add1d93',1,'Client']]],
+  ['modificar_5fminuts',['modificar_minuts',['../class_temps.html#a0960cb2b37980245fe8b0752e67dd84b',1,'Temps']]],
+  ['modificar_5fsegons',['modificar_segons',['../class_temps.html#a8c35d94fdd730ed984e7dddee20b88d3',1,'Temps']]],
+  ['modificar_5ftemps_5fcaminar',['modificar_temps_caminar',['../class_client.html#ab9604d012fe1763e9b26c0579354d7c8',1,'Client']]],
+  ['modificar_5ftemps_5fcaminar_5fi_5fessim',['modificar_temps_caminar_i_essim',['../class_conjunt__clients.html#a9bb0207ad8bb4e739dd6bf9eaadd6101',1,'Conjunt_clients']]],
+  ['modificar_5ftemps_5fcobrament',['modificar_temps_cobrament',['../class_client.html#a358215e753f86584d9159d01b66eeded',1,'Client']]],
+  ['modificar_5ftemps_5fcobrament_5fi_5fessim',['modificar_temps_cobrament_i_essim',['../class_conjunt__clients.html#ae197e6922a47e9a86d46748abc0eed16',1,'Conjunt_clients']]],
+  ['modificar_5ftemps_5fespera_5fcua',['modificar_temps_espera_cua',['../class_client.html#a8ea63f73665f9384629d2a6ff46bb252',1,'Client']]],
+  ['modificar_5ftemps_5fespera_5fcua_5fi_5fessim',['modificar_temps_espera_cua_i_essim',['../class_conjunt__clients.html#a444f5c283b94617fa4341372eb032338',1,'Conjunt_clients']]]
+];

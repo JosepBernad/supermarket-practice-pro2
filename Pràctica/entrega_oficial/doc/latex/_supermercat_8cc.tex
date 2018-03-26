@@ -1,0 +1,76 @@
+\hypertarget{_supermercat_8cc}{\section{Referència del Fitxer Supermercat.\-cc}
+\label{_supermercat_8cc}\index{Supermercat.\-cc@{Supermercat.\-cc}}
+}
+Inclou el graf de dependències per a Supermercat.\-cc\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{_supermercat_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funcions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_supermercat_8cc_a40c9e72e542bee4460d1a786adfb6eeb}{afegir\-\_\-producte\-\_\-supermercat} (string producte\-\_\-id, string \hyperlink{structseccio}{seccio}, vector$<$ vector$<$ set$<$ string $>$ $>$ $>$ \&seccions)
+\item 
+\hyperlink{class_temps}{Temps} \hyperlink{_supermercat_8cc_a8cd29707c0a2d6f7207858b0f98573e4}{temps\-\_\-espera\-\_\-aux} (\hyperlink{class_temps}{Temps} t1, \hyperlink{class_temps}{Temps} t2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentació de les Funcions}
+\hypertarget{_supermercat_8cc_a40c9e72e542bee4460d1a786adfb6eeb}{\index{Supermercat.\-cc@{Supermercat.\-cc}!afegir\-\_\-producte\-\_\-supermercat@{afegir\-\_\-producte\-\_\-supermercat}}
+\index{afegir\-\_\-producte\-\_\-supermercat@{afegir\-\_\-producte\-\_\-supermercat}!Supermercat.cc@{Supermercat.\-cc}}
+\subsubsection[{afegir\-\_\-producte\-\_\-supermercat}]{\setlength{\rightskip}{0pt plus 5cm}void afegir\-\_\-producte\-\_\-supermercat (
+\begin{DoxyParamCaption}
+\item[{string}]{producte\-\_\-id, }
+\item[{string}]{seccio, }
+\item[{vector$<$ vector$<$ set$<$ string $>$ $>$ $>$ \&}]{seccions}
+\end{DoxyParamCaption}
+)}}\label{_supermercat_8cc_a40c9e72e542bee4460d1a786adfb6eeb}
+
+
+Definició a la línia 59 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+60 \{
+61     \textcolor{keywordtype}{int} x, y;
+62     x = \hyperlink{structseccio}{seccio}[0] - \textcolor{charliteral}{'A'};
+63     y = \hyperlink{structseccio}{seccio}[1] - \textcolor{charliteral}{'0'} - 1;
+64     seccions[x][y].insert(producte\_id);
+65 \}
+\end{DoxyCode}
+\hypertarget{_supermercat_8cc_a8cd29707c0a2d6f7207858b0f98573e4}{\index{Supermercat.\-cc@{Supermercat.\-cc}!temps\-\_\-espera\-\_\-aux@{temps\-\_\-espera\-\_\-aux}}
+\index{temps\-\_\-espera\-\_\-aux@{temps\-\_\-espera\-\_\-aux}!Supermercat.cc@{Supermercat.\-cc}}
+\subsubsection[{temps\-\_\-espera\-\_\-aux}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Temps} temps\-\_\-espera\-\_\-aux (
+\begin{DoxyParamCaption}
+\item[{{\bf Temps}}]{t1, }
+\item[{{\bf Temps}}]{t2}
+\end{DoxyParamCaption}
+)}}\label{_supermercat_8cc_a8cd29707c0a2d6f7207858b0f98573e4}
+
+
+Definició a la línia 97 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+98 \{                                           \textcolor{comment}{//t2: instant de pagar del següent client}
+99     \hyperlink{class_temps}{Temps} t\_out(0,0,0);
+100     \textcolor{keywordflow}{if} (t1.\hyperlink{class_temps_ad7dfb62dadfa4f00adf58936d9cba7ed}{compara\_temps}(t2) <= 0)
+101     \{
+102         \textcolor{keywordtype}{double} t1\_aux = t1.\hyperlink{class_temps_a766b7d3c06cd8320b13854d31bac4251}{consultar\_segons}();
+103         t1\_aux += (t1.\hyperlink{class_temps_a8af21ff997b0893f9a2f2f8eccf8dc8c}{consultar\_minuts}())*60;
+104         t1\_aux += (t1.\hyperlink{class_temps_ae9f07c4548a30807e3056f217e837eb3}{consultar\_hores}())*3600;
+105         
+106         \textcolor{keywordtype}{double} t2\_aux = t2.\hyperlink{class_temps_a766b7d3c06cd8320b13854d31bac4251}{consultar\_segons}();
+107         t2\_aux += (t2.\hyperlink{class_temps_a8af21ff997b0893f9a2f2f8eccf8dc8c}{consultar\_minuts}())*60;
+108         t2\_aux += (t2.\hyperlink{class_temps_ae9f07c4548a30807e3056f217e837eb3}{consultar\_hores}())*3600;
+109         
+110         \textcolor{keywordtype}{double} out = t2\_aux - t1\_aux;
+111         t\_out.modificar\_segons(out);
+112         t\_out.actualitza\_temps();
+113     \}
+114     
+115     \textcolor{keywordflow}{return} t\_out;
+116 \}
+\end{DoxyCode}

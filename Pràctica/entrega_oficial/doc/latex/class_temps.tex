@@ -1,0 +1,618 @@
+\hypertarget{class_temps}{\section{Referència de la Classe Temps}
+\label{class_temps}\index{Temps@{Temps}}
+}
+
+
+Respresentacio del temps en hores,minuts i segons.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_temps_a0146b538b96214826a580019b4684daa}{Temps} ()
+\item 
+\hyperlink{class_temps_aafdeb338cffd2ad73a4a40c15185ba10}{Temps} (int segons\-\_\-p, int minuts\-\_\-p, int hores\-\_\-p)
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+int \hyperlink{class_temps_a766b7d3c06cd8320b13854d31bac4251}{consultar\-\_\-segons} ()
+\begin{DoxyCompactList}\small\item\em Crea un \hyperlink{class_temps}{Temps} amb els parametres donats. \end{DoxyCompactList}\item 
+int \hyperlink{class_temps_a8af21ff997b0893f9a2f2f8eccf8dc8c}{consultar\-\_\-minuts} ()
+\begin{DoxyCompactList}\small\item\em Consulta els segons del p.\-implicit. \end{DoxyCompactList}\item 
+int \hyperlink{class_temps_ae9f07c4548a30807e3056f217e837eb3}{consultar\-\_\-hores} ()
+\begin{DoxyCompactList}\small\item\em Consulta els minuts del p.\-implicit. \end{DoxyCompactList}\item 
+int \hyperlink{class_temps_ad7dfb62dadfa4f00adf58936d9cba7ed}{compara\-\_\-temps} (const \hyperlink{class_temps}{Temps} \&a)
+\begin{DoxyCompactList}\small\item\em Consulta les hores del p.\-implicit. \end{DoxyCompactList}\item 
+int \hyperlink{class_temps_a437e8d34113c89fb223b0e96bef5b73b}{temps\-\_\-cobrament\-\_\-producte} ()
+\begin{DoxyCompactList}\small\item\em Retorna si el p.\-implicit es major que el \hyperlink{class_temps}{Temps} a. \end{DoxyCompactList}\item 
+bool \hyperlink{class_temps_aa9776ffab539b0a5516ab164394c256c}{puc\-\_\-borrar} (const \hyperlink{class_temps}{Temps} \&a)
+\begin{DoxyCompactList}\small\item\em Retorna el segons del parametre implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_aaf1402577fecfa467405f0b459467cbd}{escriu\-\_\-temps} ()
+\begin{DoxyCompactList}\small\item\em Retorna si a $>$= b. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_a4b4fc92259fc43f85682bb7498f073e2}{llegir\-\_\-temps} ()
+\begin{DoxyCompactList}\small\item\em Escriu els valors del p.\-implicit en format H\-H\-:\-M\-M\-:S\-S. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_a8c35d94fdd730ed984e7dddee20b88d3}{modificar\-\_\-segons} (int n)
+\begin{DoxyCompactList}\small\item\em Llegeix un temps en format H\-H\-:\-M\-M\-:S\-S. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_a0960cb2b37980245fe8b0752e67dd84b}{modificar\-\_\-minuts} (int n)
+\begin{DoxyCompactList}\small\item\em Modifica els segons del p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_aac111fd4d07983daa42e016ab60d6795}{modificar\-\_\-hores} (int n)
+\begin{DoxyCompactList}\small\item\em Modifica els minuts del p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_a7870740e44a9a07df7eb7558822e426e}{modifica\-\_\-temps} (int segons\-\_\-p, int minuts\-\_\-p, int hores\-\_\-p)
+\begin{DoxyCompactList}\small\item\em Modifica les hores del p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_aa8a974348f379f4028bf7a382dbd1848}{modifica\-\_\-segons} (int segons\-\_\-p)
+\begin{DoxyCompactList}\small\item\em Modifica al p.\-implicit amb els parametres donats. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_af0d27c50348e09dc9c78cfe82afd3dde}{afegeix\-\_\-int} (int i)
+\begin{DoxyCompactList}\small\item\em Modifica els segons del p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_a62ec506363f8647c8bb4b02d1449cab4}{actualitza\-\_\-temps} ()
+\begin{DoxyCompactList}\small\item\em Afegeix i segons al p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_a875a45e7046f4183c5d161cb0733dbb7}{suma\-\_\-temps} (\hyperlink{class_temps}{Temps} a, \hyperlink{class_temps}{Temps} b, \hyperlink{class_temps}{Temps} \&resultat)
+\begin{DoxyCompactList}\small\item\em Actualitza al p.\-implicit donant-\/li valors s $<$ 60, m $<$ 60, sumant adequadament els minuts i les hores. \end{DoxyCompactList}\item 
+void \hyperlink{class_temps_a2ac2998519c99b726dd9d2dcbda48194}{resta\-\_\-temps} (\hyperlink{class_temps}{Temps} fi, \hyperlink{class_temps}{Temps} inici, \hyperlink{class_temps}{Temps} \&resultat)
+\begin{DoxyCompactList}\small\item\em Retorna el \hyperlink{class_temps}{Temps} fi+inici en format H\-:\-M\-:S. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Respresentacio del temps en hores,minuts i segons. 
+
+Definició a la línia 14 del fitxer Temps.\-hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\hypertarget{class_temps_a0146b538b96214826a580019b4684daa}{\index{Temps@{Temps}!Temps@{Temps}}
+\index{Temps@{Temps}!Temps@{Temps}}
+\subsubsection[{Temps}]{\setlength{\rightskip}{0pt plus 5cm}Temps\-::\-Temps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a0146b538b96214826a580019b4684daa}
+
+
+Definició a la línia 3 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+3             \{
+4 \}
+\end{DoxyCode}
+\hypertarget{class_temps_aafdeb338cffd2ad73a4a40c15185ba10}{\index{Temps@{Temps}!Temps@{Temps}}
+\index{Temps@{Temps}!Temps@{Temps}}
+\subsubsection[{Temps}]{\setlength{\rightskip}{0pt plus 5cm}Temps\-::\-Temps (
+\begin{DoxyParamCaption}
+\item[{int}]{segons\-\_\-p, }
+\item[{int}]{minuts\-\_\-p, }
+\item[{int}]{hores\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_temps_aafdeb338cffd2ad73a4a40c15185ba10}
+
+
+Constructora per defecte. 
+
+
+
+Definició a la línia 6 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+6                                                   \{
+7     segons = segons\_p;
+8     minuts = minuts\_p;
+9     hores = hores\_p;
+10 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\hypertarget{class_temps_a766b7d3c06cd8320b13854d31bac4251}{\index{Temps@{Temps}!consultar\-\_\-segons@{consultar\-\_\-segons}}
+\index{consultar\-\_\-segons@{consultar\-\_\-segons}!Temps@{Temps}}
+\subsubsection[{consultar\-\_\-segons}]{\setlength{\rightskip}{0pt plus 5cm}int Temps\-::consultar\-\_\-segons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a766b7d3c06cd8320b13854d31bac4251}
+
+
+Crea un \hyperlink{class_temps}{Temps} amb els parametres donats. 
+
+\begin{DoxyPrecond}{Precondició}
+segons $>$ 0, minuts $>$ 0, hores $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+crea un \hyperlink{class_temps}{Temps} amb els parametres donats 
+\end{DoxyPostcond}
+
+
+Definició a la línia 106 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+106                             \{
+107     \textcolor{keywordflow}{return} segons;
+108 \}
+\end{DoxyCode}
+\hypertarget{class_temps_a8af21ff997b0893f9a2f2f8eccf8dc8c}{\index{Temps@{Temps}!consultar\-\_\-minuts@{consultar\-\_\-minuts}}
+\index{consultar\-\_\-minuts@{consultar\-\_\-minuts}!Temps@{Temps}}
+\subsubsection[{consultar\-\_\-minuts}]{\setlength{\rightskip}{0pt plus 5cm}int Temps\-::consultar\-\_\-minuts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a8af21ff997b0893f9a2f2f8eccf8dc8c}
+
+
+Consulta els segons del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna segons del p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 110 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+110                             \{
+111     \textcolor{keywordflow}{return} minuts;
+112 \}
+\end{DoxyCode}
+\hypertarget{class_temps_ae9f07c4548a30807e3056f217e837eb3}{\index{Temps@{Temps}!consultar\-\_\-hores@{consultar\-\_\-hores}}
+\index{consultar\-\_\-hores@{consultar\-\_\-hores}!Temps@{Temps}}
+\subsubsection[{consultar\-\_\-hores}]{\setlength{\rightskip}{0pt plus 5cm}int Temps\-::consultar\-\_\-hores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_temps_ae9f07c4548a30807e3056f217e837eb3}
+
+
+Consulta els minuts del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna minuts del p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 114 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+114                            \{
+115     \textcolor{keywordflow}{return} hores;
+116 \}
+\end{DoxyCode}
+\hypertarget{class_temps_ad7dfb62dadfa4f00adf58936d9cba7ed}{\index{Temps@{Temps}!compara\-\_\-temps@{compara\-\_\-temps}}
+\index{compara\-\_\-temps@{compara\-\_\-temps}!Temps@{Temps}}
+\subsubsection[{compara\-\_\-temps}]{\setlength{\rightskip}{0pt plus 5cm}int Temps\-::compara\-\_\-temps (
+\begin{DoxyParamCaption}
+\item[{const {\bf Temps} \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_temps_ad7dfb62dadfa4f00adf58936d9cba7ed}
+
+
+Consulta les hores del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna hores del p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 12 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+12                                        \{
+13     \textcolor{keywordflow}{if} (hores > a.hores) \textcolor{keywordflow}{return} 1;
+14     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (hores < a.hores) \textcolor{keywordflow}{return} -1;
+15     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (minuts > a.minuts) \textcolor{keywordflow}{return} 1;
+16     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (minuts < a.minuts) \textcolor{keywordflow}{return} -1;
+17     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (segons > a.segons) \textcolor{keywordflow}{return} 1;
+18     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (segons < a.segons) \textcolor{keywordflow}{return} -1;
+19     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} 0;
+20 \}
+\end{DoxyCode}
+\hypertarget{class_temps_a437e8d34113c89fb223b0e96bef5b73b}{\index{Temps@{Temps}!temps\-\_\-cobrament\-\_\-producte@{temps\-\_\-cobrament\-\_\-producte}}
+\index{temps\-\_\-cobrament\-\_\-producte@{temps\-\_\-cobrament\-\_\-producte}!Temps@{Temps}}
+\subsubsection[{temps\-\_\-cobrament\-\_\-producte}]{\setlength{\rightskip}{0pt plus 5cm}int Temps\-::temps\-\_\-cobrament\-\_\-producte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a437e8d34113c89fb223b0e96bef5b73b}
+
+
+Retorna si el p.\-implicit es major que el \hyperlink{class_temps}{Temps} a. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Si el p.\-implicit $>$ a, retorna 1. Si es menor, retorna -\/1. En cas que siguin iguals, retorna 0 
+\end{DoxyPostcond}
+
+
+Definició a la línia 57 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+57                                     \{
+58     \textcolor{keywordflow}{return} segons;
+59 \}
+\end{DoxyCode}
+\hypertarget{class_temps_aa9776ffab539b0a5516ab164394c256c}{\index{Temps@{Temps}!puc\-\_\-borrar@{puc\-\_\-borrar}}
+\index{puc\-\_\-borrar@{puc\-\_\-borrar}!Temps@{Temps}}
+\subsubsection[{puc\-\_\-borrar}]{\setlength{\rightskip}{0pt plus 5cm}bool Temps\-::puc\-\_\-borrar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Temps} \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_temps_aa9776ffab539b0a5516ab164394c256c}
+
+
+Retorna el segons del parametre implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el segons del parametre implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 81 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+81                                     \{
+82     \textcolor{keywordflow}{if} (hores >= a.hores)
+83     \{
+84         \textcolor{keywordflow}{if} (hores > a.hores)
+85             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+86         \textcolor{keywordflow}{else}
+87             \textcolor{keywordflow}{if} (minuts >= a.minuts)
+88             \{
+89                 \textcolor{keywordflow}{if} (minuts > a.minuts)
+90                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+91                 \textcolor{keywordflow}{else}
+92                     \textcolor{keywordflow}{return} (segons >= a.segons);
+93             \}
+94             \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+95     \}
+96     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+97 \}
+\end{DoxyCode}
+\hypertarget{class_temps_aaf1402577fecfa467405f0b459467cbd}{\index{Temps@{Temps}!escriu\-\_\-temps@{escriu\-\_\-temps}}
+\index{escriu\-\_\-temps@{escriu\-\_\-temps}!Temps@{Temps}}
+\subsubsection[{escriu\-\_\-temps}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::escriu\-\_\-temps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_temps_aaf1402577fecfa467405f0b459467cbd}
+
+
+Retorna si a $>$= b. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna si a $>$= b 
+\end{DoxyPostcond}
+
+
+Definició a la línia 45 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+45                          \{
+46     \textcolor{keywordflow}{if} (hores/10 == 0)
+47         cout << 0;
+48     cout << hores << \textcolor{charliteral}{':'};
+49     \textcolor{keywordflow}{if} (minuts/10 == 0)
+50         cout << 0;
+51     cout << minuts << \textcolor{charliteral}{':'};
+52     \textcolor{keywordflow}{if} (segons/10 == 0)
+53         cout << 0;
+54     cout << segons;
+55 \}
+\end{DoxyCode}
+\hypertarget{class_temps_a4b4fc92259fc43f85682bb7498f073e2}{\index{Temps@{Temps}!llegir\-\_\-temps@{llegir\-\_\-temps}}
+\index{llegir\-\_\-temps@{llegir\-\_\-temps}!Temps@{Temps}}
+\subsubsection[{llegir\-\_\-temps}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::llegir\-\_\-temps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a4b4fc92259fc43f85682bb7498f073e2}
+
+
+Escriu els valors del p.\-implicit en format H\-H\-:\-M\-M\-:S\-S. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Els valors de p.\-implicit han set escrits pel canal estandard de sortida en format H\-H\-:\-M\-M\-:S\-S 
+\end{DoxyPostcond}
+
+
+Definició a la línia 40 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+40                          \{
+41     \textcolor{keywordtype}{char} aux;
+42     cin >> hores >> aux >> minuts >> aux >> segons;
+43 \}
+\end{DoxyCode}
+\hypertarget{class_temps_a8c35d94fdd730ed984e7dddee20b88d3}{\index{Temps@{Temps}!modificar\-\_\-segons@{modificar\-\_\-segons}}
+\index{modificar\-\_\-segons@{modificar\-\_\-segons}!Temps@{Temps}}
+\subsubsection[{modificar\-\_\-segons}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::modificar\-\_\-segons (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a8c35d94fdd730ed984e7dddee20b88d3}
+
+
+Llegeix un temps en format H\-H\-:\-M\-M\-:S\-S. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El parametre implicit passa a tenir els valors H\-H\-:\-M\-M\-:S\-S 
+\end{DoxyPostcond}
+
+
+Definició a la línia 118 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+118                                   \{
+119     segons = n;
+120 \}
+\end{DoxyCode}
+\hypertarget{class_temps_a0960cb2b37980245fe8b0752e67dd84b}{\index{Temps@{Temps}!modificar\-\_\-minuts@{modificar\-\_\-minuts}}
+\index{modificar\-\_\-minuts@{modificar\-\_\-minuts}!Temps@{Temps}}
+\subsubsection[{modificar\-\_\-minuts}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::modificar\-\_\-minuts (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a0960cb2b37980245fe8b0752e67dd84b}
+
+
+Modifica els segons del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+n $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el p.\-implicit passa a tenir n com a segons 
+\end{DoxyPostcond}
+
+
+Definició a la línia 122 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+122                                   \{
+123     minuts = n;
+124 \}
+\end{DoxyCode}
+\hypertarget{class_temps_aac111fd4d07983daa42e016ab60d6795}{\index{Temps@{Temps}!modificar\-\_\-hores@{modificar\-\_\-hores}}
+\index{modificar\-\_\-hores@{modificar\-\_\-hores}!Temps@{Temps}}
+\subsubsection[{modificar\-\_\-hores}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::modificar\-\_\-hores (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_temps_aac111fd4d07983daa42e016ab60d6795}
+
+
+Modifica els minuts del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+n $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el p.\-implicit passa a tenir n com a minuts 
+\end{DoxyPostcond}
+
+
+Definició a la línia 126 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+126                                  \{
+127     hores = n;
+128 \}
+\end{DoxyCode}
+\hypertarget{class_temps_a7870740e44a9a07df7eb7558822e426e}{\index{Temps@{Temps}!modifica\-\_\-temps@{modifica\-\_\-temps}}
+\index{modifica\-\_\-temps@{modifica\-\_\-temps}!Temps@{Temps}}
+\subsubsection[{modifica\-\_\-temps}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::modifica\-\_\-temps (
+\begin{DoxyParamCaption}
+\item[{int}]{segons\-\_\-p, }
+\item[{int}]{minuts\-\_\-p, }
+\item[{int}]{hores\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a7870740e44a9a07df7eb7558822e426e}
+
+
+Modifica les hores del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+n $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el p.\-implicit passa a tenir n com a hores 
+\end{DoxyPostcond}
+
+
+Definició a la línia 22 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+22                                                                 \{
+23     segons = segons\_p;
+24     minuts = minuts\_p;
+25     hores = hores\_p;
+26 \}
+\end{DoxyCode}
+\hypertarget{class_temps_aa8a974348f379f4028bf7a382dbd1848}{\index{Temps@{Temps}!modifica\-\_\-segons@{modifica\-\_\-segons}}
+\index{modifica\-\_\-segons@{modifica\-\_\-segons}!Temps@{Temps}}
+\subsubsection[{modifica\-\_\-segons}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::modifica\-\_\-segons (
+\begin{DoxyParamCaption}
+\item[{int}]{segons\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_temps_aa8a974348f379f4028bf7a382dbd1848}
+
+
+Modifica al p.\-implicit amb els parametres donats. 
+
+\begin{DoxyPrecond}{Precondició}
+segons\-\_\-p $>$ 0, minuts\-\_\-p $>$ 0, hores\-\_\-p $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Modifica al p.\-implicit amb els parametres donats 
+\end{DoxyPostcond}
+\hypertarget{class_temps_af0d27c50348e09dc9c78cfe82afd3dde}{\index{Temps@{Temps}!afegeix\-\_\-int@{afegeix\-\_\-int}}
+\index{afegeix\-\_\-int@{afegeix\-\_\-int}!Temps@{Temps}}
+\subsubsection[{afegeix\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::afegeix\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_temps_af0d27c50348e09dc9c78cfe82afd3dde}
+
+
+Modifica els segons del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Modifica els segons del p.\-implicit amb segons\-\_\-p 
+\end{DoxyPostcond}
+
+
+Definició a la línia 61 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+61                              \{
+62     \textcolor{keywordflow}{if} (i < 0 and segons == 0) \{
+63         \textcolor{keywordflow}{if} (minuts == 0) \{
+64             hores--;
+65             minuts = 59;
+66         \}
+67         \textcolor{keywordflow}{else} minuts--;
+68         segons = 59;
+69     \}
+70     
+71     \textcolor{keywordflow}{else} segons += i;
+72     \hyperlink{class_temps_a62ec506363f8647c8bb4b02d1449cab4}{actualitza\_temps}();
+73 \}
+\end{DoxyCode}
+\hypertarget{class_temps_a62ec506363f8647c8bb4b02d1449cab4}{\index{Temps@{Temps}!actualitza\-\_\-temps@{actualitza\-\_\-temps}}
+\index{actualitza\-\_\-temps@{actualitza\-\_\-temps}!Temps@{Temps}}
+\subsubsection[{actualitza\-\_\-temps}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::actualitza\-\_\-temps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a62ec506363f8647c8bb4b02d1449cab4}
+
+
+Afegeix i segons al p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+i $>$= -\/1 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Afegeix i segons al p.\-implicit, en format H\-H\-:\-M\-M\-:S\-S 
+\end{DoxyPostcond}
+
+
+Definició a la línia 29 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+29                              \{
+30   \textcolor{keywordflow}{if} (segons >= 60)\{
+31         minuts += segons/60;
+32         segons = segons%60;
+33     \}
+34     \textcolor{keywordflow}{if} (minuts >= 60) \{
+35         hores += minuts/60;
+36         minuts = minuts%60;
+37     \}
+38 \}
+\end{DoxyCode}
+\hypertarget{class_temps_a875a45e7046f4183c5d161cb0733dbb7}{\index{Temps@{Temps}!suma\-\_\-temps@{suma\-\_\-temps}}
+\index{suma\-\_\-temps@{suma\-\_\-temps}!Temps@{Temps}}
+\subsubsection[{suma\-\_\-temps}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::suma\-\_\-temps (
+\begin{DoxyParamCaption}
+\item[{{\bf Temps}}]{a, }
+\item[{{\bf Temps}}]{b, }
+\item[{{\bf Temps} \&}]{resultat}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a875a45e7046f4183c5d161cb0733dbb7}
+
+
+Actualitza al p.\-implicit donant-\/li valors s $<$ 60, m $<$ 60, sumant adequadament els minuts i les hores. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Si el p.\-implicit tenia s/m $>$ 59, s'han afegit els/les m/s respectius 
+\end{DoxyPostcond}
+
+
+Definició a la línia 99 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+99                                                        \{
+100     resultat.segons = a.segons + b.segons;
+101     resultat.minuts = a.minuts + b.minuts;
+102     resultat.hores = a.hores + b.hores;
+103     resultat.\hyperlink{class_temps_a62ec506363f8647c8bb4b02d1449cab4}{actualitza\_temps}();
+104 \}
+\end{DoxyCode}
+\hypertarget{class_temps_a2ac2998519c99b726dd9d2dcbda48194}{\index{Temps@{Temps}!resta\-\_\-temps@{resta\-\_\-temps}}
+\index{resta\-\_\-temps@{resta\-\_\-temps}!Temps@{Temps}}
+\subsubsection[{resta\-\_\-temps}]{\setlength{\rightskip}{0pt plus 5cm}void Temps\-::resta\-\_\-temps (
+\begin{DoxyParamCaption}
+\item[{{\bf Temps}}]{fi, }
+\item[{{\bf Temps}}]{inici, }
+\item[{{\bf Temps} \&}]{resultat}
+\end{DoxyParamCaption}
+)}}\label{class_temps_a2ac2998519c99b726dd9d2dcbda48194}
+
+
+Retorna el \hyperlink{class_temps}{Temps} fi+inici en format H\-:\-M\-:S. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el \hyperlink{class_temps}{Temps} fi+inici en format H\-:\-M\-:S 
+\end{DoxyPostcond}
+
+
+Definició a la línia 75 del fitxer Temps.\-cc.
+
+
+\begin{DoxyCode}
+75                                                              \{
+76     
+77     resultat.segons += (fi.minuts*60 + fi.hores*3600 + fi.segons) -(inici.minuts*60 + inici.hores*3600 + 
+      inici.segons) ;
+78     resultat.\hyperlink{class_temps_a62ec506363f8647c8bb4b02d1449cab4}{actualitza\_temps}();
+79 \}
+\end{DoxyCode}
+
+
+La documentació d'aquesta classe es va generar a partir dels següents fitxers\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_temps_8hh}{Temps.\-hh}\item 
+\hyperlink{_temps_8cc}{Temps.\-cc}\end{DoxyCompactItemize}

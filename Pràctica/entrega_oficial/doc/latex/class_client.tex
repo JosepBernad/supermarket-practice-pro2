@@ -1,0 +1,688 @@
+\hypertarget{class_client}{\section{Referència de la Classe Client}
+\label{class_client}\index{Client@{Client}}
+}
+
+
+Respresenta un \hyperlink{class_client}{Client} com a contenidor de Seccions i \hyperlink{class_temps}{Temps}.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_client_ae51af7aa6b8f591496a8f6a4a87a14bf}{Client} ()
+\item 
+\hyperlink{class_client_a493e90fe1fed012b37d2831734fed67a}{Client} (int identificador\-\_\-p, \hyperlink{class_temps}{Temps} t\-\_\-p, int nombre\-\_\-productes\-\_\-p)
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\hyperlink{class_client_a840e519ca781888cbd54181572ebe3a7}{$\sim$\-Client} ()
+\begin{DoxyCompactList}\small\item\em Crea un client amb els parametres rebuts. \end{DoxyCompactList}\item 
+int \hyperlink{class_client_ab9db667f1961595d18c33d81f082aba0}{consultar\-\_\-identificador} ()
+\begin{DoxyCompactList}\small\item\em Destructora per defecte. \end{DoxyCompactList}\item 
+int \hyperlink{class_client_ab6d7b4f334942edf741a06933f93d9ab}{consultar\-\_\-caixa} ()
+\begin{DoxyCompactList}\small\item\em Retorna l'identificador d'un client. \end{DoxyCompactList}\item 
+\hyperlink{class_temps}{Temps} \hyperlink{class_client_ae56fc1628dfb8b857a2cc0663b4989e8}{consultar\-\_\-instant\-\_\-tiquet} ()
+\begin{DoxyCompactList}\small\item\em Retorna la caixa assignada d'un client. \end{DoxyCompactList}\item 
+\hyperlink{class_temps}{Temps} \hyperlink{class_client_a5b08c2bce4406280925869212a0831d9}{consultar\-\_\-instant\-\_\-caixa} ()
+\begin{DoxyCompactList}\small\item\em Retorna el moment de recollida del tiquet. \end{DoxyCompactList}\item 
+int \hyperlink{class_client_af3c1754dbbd0593c30cb6ffa8ddef086}{consultar\-\_\-productes\-\_\-client} ()
+\begin{DoxyCompactList}\small\item\em Consulta l'instant de caixa del p.\-implicit. \end{DoxyCompactList}\item 
+\hyperlink{class_temps}{Temps} \hyperlink{class_client_a2ccbf48235fab996aff2bb9d31e03b67}{consultar\-\_\-temps\-\_\-cobrament} ()
+\begin{DoxyCompactList}\small\item\em Retorna el nombre de productes d'un \hyperlink{class_client}{Client}. \end{DoxyCompactList}\item 
+\hyperlink{class_temps}{Temps} \hyperlink{class_client_a94e4cd3e3d2c3e675d9e722a7e402963}{consultar\-\_\-temps\-\_\-espera\-\_\-cua} ()
+\begin{DoxyCompactList}\small\item\em Consulta el temps total que trigara el p. implicit en pagar. \end{DoxyCompactList}\item 
+\hyperlink{class_temps}{Temps} \hyperlink{class_client_a0a7ef70f7ad923d76f0982aa616ebf0c}{consultar\-\_\-instant\-\_\-cua} ()
+\begin{DoxyCompactList}\small\item\em Consulta el temps d'espera que trigara el p. implicit a la cua. \end{DoxyCompactList}\item 
+\hyperlink{class_temps}{Temps} \hyperlink{class_client_a0f893a0ad60702dacd2c2502d6b2aec3}{consultar\-\_\-instant\-\_\-acabament} ()
+\begin{DoxyCompactList}\small\item\em Consulta l'instant en el que el p.\-implicit arriba a la cua. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_afb5ec40f5410ec9766ca3c225add1d93}{modificar\-\_\-instant\-\_\-cua} (\hyperlink{class_temps}{Temps} t)
+\begin{DoxyCompactList}\small\item\em Consulta l'instant en el que el p.\-implicit acaba. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_abb16904da37ead035413d5595889af2f}{modificar\-\_\-instant\-\_\-acabament} (\hyperlink{class_temps}{Temps} instant\-\_\-acabament\-\_\-p)
+\begin{DoxyCompactList}\small\item\em Modifica l'instant en el que el p.\-implicit arriba a la cua. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_aa3c794239505f1996f1468a542548461}{modificar\-\_\-caixa} (int caixa\-\_\-p)
+\begin{DoxyCompactList}\small\item\em Modifica al P.\-I. l'instant d'acabament. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_a358215e753f86584d9159d01b66eeded}{modificar\-\_\-temps\-\_\-cobrament} (\hyperlink{class_temps}{Temps} n)
+\begin{DoxyCompactList}\small\item\em Modifica la caixa assignada del p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_a8ea63f73665f9384629d2a6ff46bb252}{modificar\-\_\-temps\-\_\-espera\-\_\-cua} (\hyperlink{class_temps}{Temps} n)
+\begin{DoxyCompactList}\small\item\em Modifica el temps de cobrament del p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_ab9604d012fe1763e9b26c0579354d7c8}{modificar\-\_\-temps\-\_\-caminar} (int t)
+\begin{DoxyCompactList}\small\item\em Modifica el temps d'espera a la cua del p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_a1718ce0ec5713509921963aaa48f6417}{modificar\-\_\-instant\-\_\-caixa} (\hyperlink{class_temps}{Temps} t)
+\begin{DoxyCompactList}\small\item\em Modifica el temps de caminar del p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_a7aa5563129732582a21cefb39fa88e9e}{llegeix\-\_\-client} (\hyperlink{class_conjunt__productes}{Conjunt\-\_\-productes} \&cp)
+\begin{DoxyCompactList}\small\item\em Modifica l'instant de caixa del p.\-implicit. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_a04bd02ce8b35ecae1656367ccadf6354}{llegir\-\_\-conjunt\-\_\-productes} (int n, \hyperlink{class_conjunt__productes}{Conjunt\-\_\-productes} \&c)
+\begin{DoxyCompactList}\small\item\em Llegeix un client pel canal estandard. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_a727c33533aae0c3e3e77eac10cf9e3c6}{consulta\-\_\-millor\-\_\-cami} (int rengles)
+\begin{DoxyCompactList}\small\item\em Llegeix un conjunt de productes i s'afegeix al \hyperlink{class_client}{Client}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Respresenta un \hyperlink{class_client}{Client} com a contenidor de Seccions i \hyperlink{class_temps}{Temps}. 
+
+Definició a la línia 29 del fitxer Client.\-hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\hypertarget{class_client_ae51af7aa6b8f591496a8f6a4a87a14bf}{\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\subsubsection[{Client}]{\setlength{\rightskip}{0pt plus 5cm}Client\-::\-Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_ae51af7aa6b8f591496a8f6a4a87a14bf}
+
+
+Definició a la línia 4 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+4               \{
+5     
+6     
+7 \}
+\end{DoxyCode}
+\hypertarget{class_client_a493e90fe1fed012b37d2831734fed67a}{\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\subsubsection[{Client}]{\setlength{\rightskip}{0pt plus 5cm}Client\-::\-Client (
+\begin{DoxyParamCaption}
+\item[{int}]{identificador\-\_\-p, }
+\item[{{\bf Temps}}]{t\-\_\-p, }
+\item[{int}]{nombre\-\_\-productes\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_client_a493e90fe1fed012b37d2831734fed67a}
+
+
+Constructora per defecte. 
+
+\hypertarget{class_client_a840e519ca781888cbd54181572ebe3a7}{\index{Client@{Client}!$\sim$\-Client@{$\sim$\-Client}}
+\index{$\sim$\-Client@{$\sim$\-Client}!Client@{Client}}
+\subsubsection[{$\sim$\-Client}]{\setlength{\rightskip}{0pt plus 5cm}Client\-::$\sim$\-Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_a840e519ca781888cbd54181572ebe3a7}
+
+
+Crea un client amb els parametres rebuts. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+crea un \hyperlink{class_client}{Client} amb els parametres identificador, t... rebuts. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 9 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\hypertarget{class_client_ab9db667f1961595d18c33d81f082aba0}{\index{Client@{Client}!consultar\-\_\-identificador@{consultar\-\_\-identificador}}
+\index{consultar\-\_\-identificador@{consultar\-\_\-identificador}!Client@{Client}}
+\subsubsection[{consultar\-\_\-identificador}]{\setlength{\rightskip}{0pt plus 5cm}int Client\-::consultar\-\_\-identificador (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_ab9db667f1961595d18c33d81f082aba0}
+
+
+Destructora per defecte. 
+
+
+
+Definició a la línia 19 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+19                                     \{
+20     \textcolor{keywordflow}{return} identificador;
+21 \}
+\end{DoxyCode}
+\hypertarget{class_client_ab6d7b4f334942edf741a06933f93d9ab}{\index{Client@{Client}!consultar\-\_\-caixa@{consultar\-\_\-caixa}}
+\index{consultar\-\_\-caixa@{consultar\-\_\-caixa}!Client@{Client}}
+\subsubsection[{consultar\-\_\-caixa}]{\setlength{\rightskip}{0pt plus 5cm}int Client\-::consultar\-\_\-caixa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_ab6d7b4f334942edf741a06933f93d9ab}
+
+
+Retorna l'identificador d'un client. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna l'identificador del client del p. implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 15 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+15                            \{
+16   \textcolor{keywordflow}{return} caixa;
+17 \}
+\end{DoxyCode}
+\hypertarget{class_client_ae56fc1628dfb8b857a2cc0663b4989e8}{\index{Client@{Client}!consultar\-\_\-instant\-\_\-tiquet@{consultar\-\_\-instant\-\_\-tiquet}}
+\index{consultar\-\_\-instant\-\_\-tiquet@{consultar\-\_\-instant\-\_\-tiquet}!Client@{Client}}
+\subsubsection[{consultar\-\_\-instant\-\_\-tiquet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Temps} Client\-::consultar\-\_\-instant\-\_\-tiquet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_ae56fc1628dfb8b857a2cc0663b4989e8}
+
+
+Retorna la caixa assignada d'un client. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna la caixa assignada d'un client 
+\end{DoxyPostcond}
+
+
+Definició a la línia 44 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+44                                        \{
+45     \textcolor{keywordflow}{return} instant\_tiquet;
+46 \}
+\end{DoxyCode}
+\hypertarget{class_client_a5b08c2bce4406280925869212a0831d9}{\index{Client@{Client}!consultar\-\_\-instant\-\_\-caixa@{consultar\-\_\-instant\-\_\-caixa}}
+\index{consultar\-\_\-instant\-\_\-caixa@{consultar\-\_\-instant\-\_\-caixa}!Client@{Client}}
+\subsubsection[{consultar\-\_\-instant\-\_\-caixa}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Temps} Client\-::consultar\-\_\-instant\-\_\-caixa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_a5b08c2bce4406280925869212a0831d9}
+
+
+Retorna el moment de recollida del tiquet. 
+
+\begin{DoxyPrecond}{Precondició}
+El \hyperlink{class_client}{Client} ha recollit el tiquet 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna l'instant de recollida del parametre implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 31 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+31                                       \{
+32     \textcolor{keywordflow}{return} instant\_caixa;
+33 \}
+\end{DoxyCode}
+\hypertarget{class_client_af3c1754dbbd0593c30cb6ffa8ddef086}{\index{Client@{Client}!consultar\-\_\-productes\-\_\-client@{consultar\-\_\-productes\-\_\-client}}
+\index{consultar\-\_\-productes\-\_\-client@{consultar\-\_\-productes\-\_\-client}!Client@{Client}}
+\subsubsection[{consultar\-\_\-productes\-\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}int Client\-::consultar\-\_\-productes\-\_\-client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_af3c1754dbbd0593c30cb6ffa8ddef086}
+
+
+Consulta l'instant de caixa del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna l'instan de caixa del p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 11 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+11                                        \{
+12     \textcolor{keywordflow}{return} nombre\_productes;
+13 \}
+\end{DoxyCode}
+\hypertarget{class_client_a2ccbf48235fab996aff2bb9d31e03b67}{\index{Client@{Client}!consultar\-\_\-temps\-\_\-cobrament@{consultar\-\_\-temps\-\_\-cobrament}}
+\index{consultar\-\_\-temps\-\_\-cobrament@{consultar\-\_\-temps\-\_\-cobrament}!Client@{Client}}
+\subsubsection[{consultar\-\_\-temps\-\_\-cobrament}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Temps} Client\-::consultar\-\_\-temps\-\_\-cobrament (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_a2ccbf48235fab996aff2bb9d31e03b67}
+
+
+Retorna el nombre de productes d'un \hyperlink{class_client}{Client}. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna el nombre de productes que te el p. implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 23 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+23                                         \{
+24     \textcolor{keywordflow}{return} temps\_cobrament;
+25 \}
+\end{DoxyCode}
+\hypertarget{class_client_a94e4cd3e3d2c3e675d9e722a7e402963}{\index{Client@{Client}!consultar\-\_\-temps\-\_\-espera\-\_\-cua@{consultar\-\_\-temps\-\_\-espera\-\_\-cua}}
+\index{consultar\-\_\-temps\-\_\-espera\-\_\-cua@{consultar\-\_\-temps\-\_\-espera\-\_\-cua}!Client@{Client}}
+\subsubsection[{consultar\-\_\-temps\-\_\-espera\-\_\-cua}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Temps} Client\-::consultar\-\_\-temps\-\_\-espera\-\_\-cua (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_a94e4cd3e3d2c3e675d9e722a7e402963}
+
+
+Consulta el temps total que trigara el p. implicit en pagar. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna el temps\-\_\-cobrament del p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 113 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+113                                          \{
+114     \textcolor{keywordflow}{return} temps\_espera\_cua;
+115 \}
+\end{DoxyCode}
+\hypertarget{class_client_a0a7ef70f7ad923d76f0982aa616ebf0c}{\index{Client@{Client}!consultar\-\_\-instant\-\_\-cua@{consultar\-\_\-instant\-\_\-cua}}
+\index{consultar\-\_\-instant\-\_\-cua@{consultar\-\_\-instant\-\_\-cua}!Client@{Client}}
+\subsubsection[{consultar\-\_\-instant\-\_\-cua}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Temps} Client\-::consultar\-\_\-instant\-\_\-cua (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_a0a7ef70f7ad923d76f0982aa616ebf0c}
+
+
+Consulta el temps d'espera que trigara el p. implicit a la cua. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna el temps\-\_\-espera del p.\-miplicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 121 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+121                                     \{
+122     \textcolor{keywordflow}{return} instant\_cua;
+123 \}
+\end{DoxyCode}
+\hypertarget{class_client_a0f893a0ad60702dacd2c2502d6b2aec3}{\index{Client@{Client}!consultar\-\_\-instant\-\_\-acabament@{consultar\-\_\-instant\-\_\-acabament}}
+\index{consultar\-\_\-instant\-\_\-acabament@{consultar\-\_\-instant\-\_\-acabament}!Client@{Client}}
+\subsubsection[{consultar\-\_\-instant\-\_\-acabament}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Temps} Client\-::consultar\-\_\-instant\-\_\-acabament (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_client_a0f893a0ad60702dacd2c2502d6b2aec3}
+
+
+Consulta l'instant en el que el p.\-implicit arriba a la cua. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna l'instant de cua del p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 117 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+117                                           \{
+118     \textcolor{keywordflow}{return} instant\_acabament;
+119 \}
+\end{DoxyCode}
+\hypertarget{class_client_afb5ec40f5410ec9766ca3c225add1d93}{\index{Client@{Client}!modificar\-\_\-instant\-\_\-cua@{modificar\-\_\-instant\-\_\-cua}}
+\index{modificar\-\_\-instant\-\_\-cua@{modificar\-\_\-instant\-\_\-cua}!Client@{Client}}
+\subsubsection[{modificar\-\_\-instant\-\_\-cua}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::modificar\-\_\-instant\-\_\-cua (
+\begin{DoxyParamCaption}
+\item[{{\bf Temps}}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_client_afb5ec40f5410ec9766ca3c225add1d93}
+
+
+Consulta l'instant en el que el p.\-implicit acaba. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna l'instant d'acabament del p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 27 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+27                                          \{
+28     instant\_cua = t;
+29 \}
+\end{DoxyCode}
+\hypertarget{class_client_abb16904da37ead035413d5595889af2f}{\index{Client@{Client}!modificar\-\_\-instant\-\_\-acabament@{modificar\-\_\-instant\-\_\-acabament}}
+\index{modificar\-\_\-instant\-\_\-acabament@{modificar\-\_\-instant\-\_\-acabament}!Client@{Client}}
+\subsubsection[{modificar\-\_\-instant\-\_\-acabament}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::modificar\-\_\-instant\-\_\-acabament (
+\begin{DoxyParamCaption}
+\item[{{\bf Temps}}]{instant\-\_\-acabament\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_client_abb16904da37ead035413d5595889af2f}
+
+
+Modifica l'instant en el que el p.\-implicit arriba a la cua. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El p.\-implicit passa a tenir com a instant\-\_\-cua t 
+\end{DoxyPostcond}
+
+
+Definició a la línia 39 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+39                                                 \{
+40     instant\_acabament = t;
+41 \}
+\end{DoxyCode}
+\hypertarget{class_client_aa3c794239505f1996f1468a542548461}{\index{Client@{Client}!modificar\-\_\-caixa@{modificar\-\_\-caixa}}
+\index{modificar\-\_\-caixa@{modificar\-\_\-caixa}!Client@{Client}}
+\subsubsection[{modificar\-\_\-caixa}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::modificar\-\_\-caixa (
+\begin{DoxyParamCaption}
+\item[{int}]{caixa\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_client_aa3c794239505f1996f1468a542548461}
+
+
+Modifica al P.\-I. l'instant d'acabament. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+modifica al P.\-I. l'instant d'acabament 
+\end{DoxyPostcond}
+
+
+Definició a la línia 48 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+48                                        \{
+49   caixa = caixa\_p;
+50 \}
+\end{DoxyCode}
+\hypertarget{class_client_a358215e753f86584d9159d01b66eeded}{\index{Client@{Client}!modificar\-\_\-temps\-\_\-cobrament@{modificar\-\_\-temps\-\_\-cobrament}}
+\index{modificar\-\_\-temps\-\_\-cobrament@{modificar\-\_\-temps\-\_\-cobrament}!Client@{Client}}
+\subsubsection[{modificar\-\_\-temps\-\_\-cobrament}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::modificar\-\_\-temps\-\_\-cobrament (
+\begin{DoxyParamCaption}
+\item[{{\bf Temps}}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_client_a358215e753f86584d9159d01b66eeded}
+
+
+Modifica la caixa assignada del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+la caixa assignada del p.\-implicit passa a ser caixa\-\_\-p 
+\end{DoxyPostcond}
+
+
+Definició a la línia 101 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+101                                              \{
+102     temps\_cobrament = n;
+103 \}
+\end{DoxyCode}
+\hypertarget{class_client_a8ea63f73665f9384629d2a6ff46bb252}{\index{Client@{Client}!modificar\-\_\-temps\-\_\-espera\-\_\-cua@{modificar\-\_\-temps\-\_\-espera\-\_\-cua}}
+\index{modificar\-\_\-temps\-\_\-espera\-\_\-cua@{modificar\-\_\-temps\-\_\-espera\-\_\-cua}!Client@{Client}}
+\subsubsection[{modificar\-\_\-temps\-\_\-espera\-\_\-cua}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::modificar\-\_\-temps\-\_\-espera\-\_\-cua (
+\begin{DoxyParamCaption}
+\item[{{\bf Temps}}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_client_a8ea63f73665f9384629d2a6ff46bb252}
+
+
+Modifica el temps de cobrament del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el temps de cobrament del p.\-implicit passa a ser n 
+\end{DoxyPostcond}
+
+
+Definició a la línia 105 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+105                                                \{
+106     temps\_espera\_cua = n;
+107 \}
+\end{DoxyCode}
+\hypertarget{class_client_ab9604d012fe1763e9b26c0579354d7c8}{\index{Client@{Client}!modificar\-\_\-temps\-\_\-caminar@{modificar\-\_\-temps\-\_\-caminar}}
+\index{modificar\-\_\-temps\-\_\-caminar@{modificar\-\_\-temps\-\_\-caminar}!Client@{Client}}
+\subsubsection[{modificar\-\_\-temps\-\_\-caminar}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::modificar\-\_\-temps\-\_\-caminar (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_client_ab9604d012fe1763e9b26c0579354d7c8}
+
+
+Modifica el temps d'espera a la cua del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el temps d'espera\-\_\-cua dl p.\-implicit passa a ser n 
+\end{DoxyPostcond}
+
+
+Definició a la línia 109 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+109                                           \{
+110     temps\_caminar = n;
+111 \}
+\end{DoxyCode}
+\hypertarget{class_client_a1718ce0ec5713509921963aaa48f6417}{\index{Client@{Client}!modificar\-\_\-instant\-\_\-caixa@{modificar\-\_\-instant\-\_\-caixa}}
+\index{modificar\-\_\-instant\-\_\-caixa@{modificar\-\_\-instant\-\_\-caixa}!Client@{Client}}
+\subsubsection[{modificar\-\_\-instant\-\_\-caixa}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::modificar\-\_\-instant\-\_\-caixa (
+\begin{DoxyParamCaption}
+\item[{{\bf Temps}}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_client_a1718ce0ec5713509921963aaa48f6417}
+
+
+Modifica el temps de caminar del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Modifica el temps de caminar del p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 35 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+35                                            \{
+36     instant\_caixa = t;
+37 \}
+\end{DoxyCode}
+\hypertarget{class_client_a7aa5563129732582a21cefb39fa88e9e}{\index{Client@{Client}!llegeix\-\_\-client@{llegeix\-\_\-client}}
+\index{llegeix\-\_\-client@{llegeix\-\_\-client}!Client@{Client}}
+\subsubsection[{llegeix\-\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::llegeix\-\_\-client (
+\begin{DoxyParamCaption}
+\item[{{\bf Conjunt\-\_\-productes} \&}]{cp}
+\end{DoxyParamCaption}
+)}}\label{class_client_a7aa5563129732582a21cefb39fa88e9e}
+
+
+Modifica l'instant de caixa del p.\-implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Modifica el temps de caixa del p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 52 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+52                                                 \{
+53     cin >> identificador;
+54     instant\_tiquet.\hyperlink{class_temps_a4b4fc92259fc43f85682bb7498f073e2}{llegir\_temps}();
+55     \textcolor{keywordtype}{int} n;
+56     cin >> n;
+57     \hyperlink{class_temps}{Temps} t(0,0,0);
+58     temps\_caminar = 0;
+59     instant\_cua = t;
+60     temps\_espera\_cua = t;
+61     instant\_caixa = t;
+62     temps\_cobrament = t;
+63     instant\_acabament = t;
+64     \hyperlink{class_client_a04bd02ce8b35ecae1656367ccadf6354}{llegir\_conjunt\_productes}(n,c);
+65 
+66 \}
+\end{DoxyCode}
+\hypertarget{class_client_a04bd02ce8b35ecae1656367ccadf6354}{\index{Client@{Client}!llegir\-\_\-conjunt\-\_\-productes@{llegir\-\_\-conjunt\-\_\-productes}}
+\index{llegir\-\_\-conjunt\-\_\-productes@{llegir\-\_\-conjunt\-\_\-productes}!Client@{Client}}
+\subsubsection[{llegir\-\_\-conjunt\-\_\-productes}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::llegir\-\_\-conjunt\-\_\-productes (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{{\bf Conjunt\-\_\-productes} \&}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_client_a04bd02ce8b35ecae1656367ccadf6354}
+
+
+Llegeix un client pel canal estandard. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+llegeix un client per el canal estandard 
+\end{DoxyPostcond}
+
+
+Definició a la línia 68 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+68                                                                   \{
+69     \textcolor{keywordtype}{string} producte\_id;
+70     \textcolor{keywordtype}{int} quantitat;
+71     \textcolor{keywordtype}{string} p;
+72     \textcolor{keywordtype}{int} j = 0;
+73     vector<seccio> aux(n);
+74     set<string> llista\_auxiliar;
+75     nombre\_productes = 0;
+76     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; i++) \{
+77         cin >> producte\_id;
+78         cin >> quantitat;
+79         nombre\_productes += quantitat;
+80         p = cp.consultar\_seccio\_producte(producte\_id);
+81         \textcolor{keywordflow}{if} (llista\_auxiliar.find(p) == llista\_auxiliar.end()) \{
+82             llista\_auxiliar.insert(p);
+83             aux[j].x = p[0];
+84             aux[j].y = p[1] - \textcolor{charliteral}{'0'};
+85             j++;
+86         \}
+87         \hyperlink{class_temps}{Temps} aux(cp.id\_temps\_cobrament(producte\_id)*quantitat,0,0);
+88         aux.\hyperlink{class_temps_a875a45e7046f4183c5d161cb0733dbb7}{suma\_temps}(aux, temps\_cobrament, temps\_cobrament);
+89         temps\_cobrament.\hyperlink{class_temps_a62ec506363f8647c8bb4b02d1449cab4}{actualitza\_temps}();
+90     \}
+91   vector<seccio> aux2 (j);
+92   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < j;i++) \{
+93     aux2[i].x = aux[i].x;
+94     aux2[i].y = aux[i].y;
+95   \}
+96   productes = aux2;
+97 \}
+\end{DoxyCode}
+\hypertarget{class_client_a727c33533aae0c3e3e77eac10cf9e3c6}{\index{Client@{Client}!consulta\-\_\-millor\-\_\-cami@{consulta\-\_\-millor\-\_\-cami}}
+\index{consulta\-\_\-millor\-\_\-cami@{consulta\-\_\-millor\-\_\-cami}!Client@{Client}}
+\subsubsection[{consulta\-\_\-millor\-\_\-cami}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::consulta\-\_\-millor\-\_\-cami (
+\begin{DoxyParamCaption}
+\item[{int}]{rengles}
+\end{DoxyParamCaption}
+)}}\label{class_client_a727c33533aae0c3e3e77eac10cf9e3c6}
+
+
+Llegeix un conjunt de productes i s'afegeix al \hyperlink{class_client}{Client}. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el parametre implicit passa a tenir els n productes llegits com a productes 
+\end{DoxyPostcond}
+
+
+Definició a la línia 194 del fitxer Client.\-cc.
+
+
+\begin{DoxyCode}
+194                                                     \{
+195     \textcolor{keywordtype}{int} min = 55555555;
+196     \textcolor{keywordtype}{int} actual = 0;
+197     vector<seccio> vector\_aux (productes.size());
+198     \hyperlink{_client_8cc_a46dcbde0b35706040fdc7644269132be}{consultar\_millor\_cami\_aux}(productes,0, vector\_aux, min, columnes, actual);
+199     cout << min << endl;
+200     cout << \textcolor{stringliteral}{"A1"} << \textcolor{stringliteral}{" "}; 
+201     pair<int,int> i\_f = \hyperlink{_client_8cc_aa1c79131574379b4cd989a7ef172990d}{cas\_extrem}(vector\_aux,columnes);
+202     \textcolor{keywordflow}{if} (min != 0) \{
+203         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = i\_f.first; i < i\_f.second ; i++) cout << vector\_aux[i].x << vector\_aux[i].y << \textcolor{stringliteral}{" "};
+204         cout << \textcolor{stringliteral}{"A"} << columnes << \textcolor{stringliteral}{" "} << endl;
+205     \}
+206     \textcolor{keywordflow}{else} cout << endl;
+207 \}
+\end{DoxyCode}
+
+
+La documentació d'aquesta classe es va generar a partir dels següents fitxers\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_client_8hh}{Client.\-hh}\item 
+\hyperlink{_client_8cc}{Client.\-cc}\end{DoxyCompactItemize}

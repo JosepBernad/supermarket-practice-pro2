@@ -1,0 +1,246 @@
+\hypertarget{class_producte}{\section{Referència de la Classe Producte}
+\label{class_producte}\index{Producte@{Producte}}
+}
+
+
+Respresenta un \hyperlink{class_producte}{Producte} com a contenidor d'un id, la seva posició a la graella, un temps de cobrament i un preu.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_producte_aa3df33bb7528537f4eefbb92e7e4c2f3}{Producte} ()
+\item 
+\hyperlink{class_producte_ac7a18d4d3047ec7daf9403d20f13c4d9}{Producte} (string graella\-\_\-p, int temps\-\_\-de\-\_\-cobrament\-\_\-p, double preu\-\_\-p, string producte\-\_\-id\-\_\-p)
+\begin{DoxyCompactList}\small\item\em crea un \hyperlink{class_producte}{Producte} buit \end{DoxyCompactList}\item 
+\hyperlink{class_producte_ac99ae026acafc3504ed5e2c4e4bb2817}{$\sim$\-Producte} ()
+\begin{DoxyCompactList}\small\item\em crea un producte amb els parametres donats \end{DoxyCompactList}\item 
+int \hyperlink{class_producte_abe6eadf62ca2c47dc3cabd5d561d8fdd}{consultar\-\_\-temps\-\_\-producte} ()
+\begin{DoxyCompactList}\small\item\em Destructora per defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_producte_a845c6ce3ecc9a59b8d395af37ab635b5}{llegir\-\_\-producte} ()
+\begin{DoxyCompactList}\small\item\em Consulta el temps que es triga en cobrar un producte a caixa. \end{DoxyCompactList}\item 
+void \hyperlink{class_producte_a8713d47b8527c1279a8c6442f56fa5cb}{escriure\-\_\-producte} ()
+\begin{DoxyCompactList}\small\item\em Llegeix un producte pel canal estandard d'entrada. \end{DoxyCompactList}\item 
+string \hyperlink{class_producte_a8fb3df376d814057012a9a71e94833c2}{consulta\-\_\-graella} ()
+\begin{DoxyCompactList}\small\item\em Escriu un producte pel canal estandard de soritda. \end{DoxyCompactList}\item 
+string \hyperlink{class_producte_a8454225034dcde4ca6f951ff4f6e901c}{consultar\-\_\-nom} ()
+\begin{DoxyCompactList}\small\item\em Retorna on es troba un producte a la graella. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Respresenta un \hyperlink{class_producte}{Producte} com a contenidor d'un id, la seva posició a la graella, un temps de cobrament i un preu. 
+
+Definició a la línia 19 del fitxer Producte.\-hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\hypertarget{class_producte_aa3df33bb7528537f4eefbb92e7e4c2f3}{\index{Producte@{Producte}!Producte@{Producte}}
+\index{Producte@{Producte}!Producte@{Producte}}
+\subsubsection[{Producte}]{\setlength{\rightskip}{0pt plus 5cm}Producte\-::\-Producte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_producte_aa3df33bb7528537f4eefbb92e7e4c2f3}
+\hypertarget{class_producte_ac7a18d4d3047ec7daf9403d20f13c4d9}{\index{Producte@{Producte}!Producte@{Producte}}
+\index{Producte@{Producte}!Producte@{Producte}}
+\subsubsection[{Producte}]{\setlength{\rightskip}{0pt plus 5cm}Producte\-::\-Producte (
+\begin{DoxyParamCaption}
+\item[{string}]{graella\-\_\-p, }
+\item[{int}]{temps\-\_\-de\-\_\-cobrament\-\_\-p, }
+\item[{double}]{preu\-\_\-p, }
+\item[{string}]{producte\-\_\-id\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_producte_ac7a18d4d3047ec7daf9403d20f13c4d9}
+
+
+crea un \hyperlink{class_producte}{Producte} buit 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+cert 
+\end{DoxyPostcond}
+
+
+Definició a la línia 3 del fitxer Producte.\-cc.
+
+
+\begin{DoxyCode}
+3                                                                                                   \{
+4     producte\_id = producte\_id\_p;
+5     graella = graella\_p;
+6     \textcolor{keywordtype}{int} aux = temps\_de\_cobrament\_p;
+7     \hyperlink{class_temps}{Temps} temps\_aux(0,0,temps\_de\_cobrament\_p);
+8     temps\_de\_cobrament = temps\_aux;
+9     temps\_de\_cobrament.\hyperlink{class_temps_a8c35d94fdd730ed984e7dddee20b88d3}{modificar\_segons}(aux);
+10     preu = preu\_p;
+11 \}
+\end{DoxyCode}
+\hypertarget{class_producte_ac99ae026acafc3504ed5e2c4e4bb2817}{\index{Producte@{Producte}!$\sim$\-Producte@{$\sim$\-Producte}}
+\index{$\sim$\-Producte@{$\sim$\-Producte}!Producte@{Producte}}
+\subsubsection[{$\sim$\-Producte}]{\setlength{\rightskip}{0pt plus 5cm}Producte\-::$\sim$\-Producte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_producte_ac99ae026acafc3504ed5e2c4e4bb2817}
+
+
+crea un producte amb els parametres donats 
+
+\begin{DoxyPrecond}{Precondició}
+graella\-\_\-p està dins del \hyperlink{class_supermercat}{Supermercat}, temps\-\_\-de\-\_\-cobrament\-\_\-p $>$ 0, preu\-\_\-p $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+crea un \hyperlink{class_client}{Client} amb els parametres donats 
+\end{DoxyPostcond}
+
+
+Definició a la línia 13 del fitxer Producte.\-cc.
+
+
+\begin{DoxyCode}
+13 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\hypertarget{class_producte_abe6eadf62ca2c47dc3cabd5d561d8fdd}{\index{Producte@{Producte}!consultar\-\_\-temps\-\_\-producte@{consultar\-\_\-temps\-\_\-producte}}
+\index{consultar\-\_\-temps\-\_\-producte@{consultar\-\_\-temps\-\_\-producte}!Producte@{Producte}}
+\subsubsection[{consultar\-\_\-temps\-\_\-producte}]{\setlength{\rightskip}{0pt plus 5cm}int Producte\-::consultar\-\_\-temps\-\_\-producte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_producte_abe6eadf62ca2c47dc3cabd5d561d8fdd}
+
+
+Destructora per defecte. 
+
+
+
+Definició a la línia 15 del fitxer Producte.\-cc.
+
+
+\begin{DoxyCode}
+15                                        \{
+16     \textcolor{keywordflow}{return} temps\_de\_cobrament.\hyperlink{class_temps_a437e8d34113c89fb223b0e96bef5b73b}{temps\_cobrament\_producte}();
+17 \}
+\end{DoxyCode}
+\hypertarget{class_producte_a845c6ce3ecc9a59b8d395af37ab635b5}{\index{Producte@{Producte}!llegir\-\_\-producte@{llegir\-\_\-producte}}
+\index{llegir\-\_\-producte@{llegir\-\_\-producte}!Producte@{Producte}}
+\subsubsection[{llegir\-\_\-producte}]{\setlength{\rightskip}{0pt plus 5cm}void Producte\-::llegir\-\_\-producte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_producte_a845c6ce3ecc9a59b8d395af37ab635b5}
+
+
+Consulta el temps que es triga en cobrar un producte a caixa. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el temps\-\_\-de\-\_\-cobrament del parametre implícit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 23 del fitxer Producte.\-cc.
+
+
+\begin{DoxyCode}
+23                                \{
+24     \textcolor{keywordtype}{int} n;
+25     cin >> producte\_id >> preu >> graella >> n;
+26     temps\_de\_cobrament.\hyperlink{class_temps_a8c35d94fdd730ed984e7dddee20b88d3}{modificar\_segons}(n);
+27 \}
+\end{DoxyCode}
+\hypertarget{class_producte_a8713d47b8527c1279a8c6442f56fa5cb}{\index{Producte@{Producte}!escriure\-\_\-producte@{escriure\-\_\-producte}}
+\index{escriure\-\_\-producte@{escriure\-\_\-producte}!Producte@{Producte}}
+\subsubsection[{escriure\-\_\-producte}]{\setlength{\rightskip}{0pt plus 5cm}void Producte\-::escriure\-\_\-producte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_producte_a8713d47b8527c1279a8c6442f56fa5cb}
+
+
+Llegeix un producte pel canal estandard d'entrada. 
+
+\begin{DoxyPrecond}{Precondició}
+graella\-\_\-p està dins del \hyperlink{class_supermercat}{Supermercat}, temps\-\_\-de\-\_\-cobrament\-\_\-p $>$ 0, preu\-\_\-p $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el parametre implicit te com a valors els de l'entrada 
+\end{DoxyPostcond}
+
+
+Definició a la línia 19 del fitxer Producte.\-cc.
+
+
+\begin{DoxyCode}
+19                                  \{
+20     cout << producte\_id << \textcolor{stringliteral}{" "} << preu << \textcolor{stringliteral}{" "} << graella << \textcolor{stringliteral}{" "} << temps\_de\_cobrament.
+      \hyperlink{class_temps_a437e8d34113c89fb223b0e96bef5b73b}{temps\_cobrament\_producte}() << endl;
+21 \}
+\end{DoxyCode}
+\hypertarget{class_producte_a8fb3df376d814057012a9a71e94833c2}{\index{Producte@{Producte}!consulta\-\_\-graella@{consulta\-\_\-graella}}
+\index{consulta\-\_\-graella@{consulta\-\_\-graella}!Producte@{Producte}}
+\subsubsection[{consulta\-\_\-graella}]{\setlength{\rightskip}{0pt plus 5cm}string Producte\-::consulta\-\_\-graella (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_producte_a8fb3df376d814057012a9a71e94833c2}
+
+
+Escriu un producte pel canal estandard de soritda. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el valors del p.\-implicit s'han escrit pel canal estandard de sortida 
+\end{DoxyPostcond}
+
+
+Definició a la línia 29 del fitxer Producte.\-cc.
+
+
+\begin{DoxyCode}
+29                                   \{
+30     \textcolor{keywordflow}{return} graella;
+31 \}
+\end{DoxyCode}
+\hypertarget{class_producte_a8454225034dcde4ca6f951ff4f6e901c}{\index{Producte@{Producte}!consultar\-\_\-nom@{consultar\-\_\-nom}}
+\index{consultar\-\_\-nom@{consultar\-\_\-nom}!Producte@{Producte}}
+\subsubsection[{consultar\-\_\-nom}]{\setlength{\rightskip}{0pt plus 5cm}string Producte\-::consultar\-\_\-nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_producte_a8454225034dcde4ca6f951ff4f6e901c}
+
+
+Retorna on es troba un producte a la graella. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna a quina seccio de la graella del supermercat es troba el p.\-implicit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 33 del fitxer Producte.\-cc.
+
+
+\begin{DoxyCode}
+33                                \{
+34     \textcolor{keywordflow}{return} producte\_id;
+35 \}
+\end{DoxyCode}
+
+
+La documentació d'aquesta classe es va generar a partir dels següents fitxers\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_producte_8hh}{Producte.\-hh}\item 
+\hyperlink{_producte_8cc}{Producte.\-cc}\end{DoxyCompactItemize}

@@ -1,0 +1,212 @@
+\hypertarget{class_conjunt__productes}{\section{Referència de la Classe Conjunt\-\_\-productes}
+\label{class_conjunt__productes}\index{Conjunt\-\_\-productes@{Conjunt\-\_\-productes}}
+}
+
+
+Respresenta un Conjunt de productes con a contenidor de Productes.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_conjunt__productes_ae01e8c8f5594330fcc6a6ba628da2928}{Conjunt\-\_\-productes} ()
+\item 
+\hyperlink{class_conjunt__productes_a5eab2e799cba8d5d0f80984ec9e84384}{$\sim$\-Conjunt\-\_\-productes} ()
+\begin{DoxyCompactList}\small\item\em crea un conjunt de productes buit \end{DoxyCompactList}\item 
+void \hyperlink{class_conjunt__productes_a2b52bd25ae0c261a74ed8e31737b7dcb}{afegir\-\_\-producte\-\_\-cjt\-\_\-productes} (string producte\-\_\-id, double preu, string \hyperlink{structseccio}{seccio}, int temps\-\_\-cobrament)
+\begin{DoxyCompactList}\small\item\em Destructora per defcte. \end{DoxyCompactList}\item 
+void \hyperlink{class_conjunt__productes_a881cfe5494d2fac0354fdc82636fc5ff}{informacio\-\_\-producte} (string producte\-\_\-id)
+\begin{DoxyCompactList}\small\item\em Afegeix un producte al conjunt de productes a partir dels seus atributs. \end{DoxyCompactList}\item 
+int \hyperlink{class_conjunt__productes_ac60c068189c58f6f0c7e6e89fddd1feb}{id\-\_\-temps\-\_\-cobrament} (string identificador)
+\begin{DoxyCompactList}\small\item\em Imprimeix la informaci� d'un producte. \end{DoxyCompactList}\item 
+string \hyperlink{class_conjunt__productes_ac093ff495a1d81d3bd0fe5bb72400b87}{consultar\-\_\-seccio\-\_\-producte} (string producte\-\_\-id)
+\begin{DoxyCompactList}\small\item\em Retorna el temps de cobrament d'un producte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Respresenta un Conjunt de productes con a contenidor de Productes. 
+
+Definició a la línia 17 del fitxer Conjunt\-\_\-productes.\-hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\hypertarget{class_conjunt__productes_ae01e8c8f5594330fcc6a6ba628da2928}{\index{Conjunt\-\_\-productes@{Conjunt\-\_\-productes}!Conjunt\-\_\-productes@{Conjunt\-\_\-productes}}
+\index{Conjunt\-\_\-productes@{Conjunt\-\_\-productes}!Conjunt_productes@{Conjunt\-\_\-productes}}
+\subsubsection[{Conjunt\-\_\-productes}]{\setlength{\rightskip}{0pt plus 5cm}Conjunt\-\_\-productes\-::\-Conjunt\-\_\-productes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_conjunt__productes_ae01e8c8f5594330fcc6a6ba628da2928}
+
+
+Definició a la línia 5 del fitxer Conjunt\-\_\-productes.\-cc.
+
+
+\begin{DoxyCode}
+5                                      \{
+6     map<string, Producte> conjunt\_prod\_p;
+7     conjunt\_prod = conjunt\_prod\_p;
+8     nombre\_productes = 0;
+9 \}
+\end{DoxyCode}
+\hypertarget{class_conjunt__productes_a5eab2e799cba8d5d0f80984ec9e84384}{\index{Conjunt\-\_\-productes@{Conjunt\-\_\-productes}!$\sim$\-Conjunt\-\_\-productes@{$\sim$\-Conjunt\-\_\-productes}}
+\index{$\sim$\-Conjunt\-\_\-productes@{$\sim$\-Conjunt\-\_\-productes}!Conjunt_productes@{Conjunt\-\_\-productes}}
+\subsubsection[{$\sim$\-Conjunt\-\_\-productes}]{\setlength{\rightskip}{0pt plus 5cm}Conjunt\-\_\-productes\-::$\sim$\-Conjunt\-\_\-productes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_conjunt__productes_a5eab2e799cba8d5d0f80984ec9e84384}
+
+
+crea un conjunt de productes buit 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+crea un \hyperlink{class_conjunt__productes}{Conjunt\-\_\-productes} amb nombre\-\_\-productes = 0 
+\end{DoxyPostcond}
+
+
+Definició a la línia 11 del fitxer Conjunt\-\_\-productes.\-cc.
+
+
+\begin{DoxyCode}
+11 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\hypertarget{class_conjunt__productes_a2b52bd25ae0c261a74ed8e31737b7dcb}{\index{Conjunt\-\_\-productes@{Conjunt\-\_\-productes}!afegir\-\_\-producte\-\_\-cjt\-\_\-productes@{afegir\-\_\-producte\-\_\-cjt\-\_\-productes}}
+\index{afegir\-\_\-producte\-\_\-cjt\-\_\-productes@{afegir\-\_\-producte\-\_\-cjt\-\_\-productes}!Conjunt_productes@{Conjunt\-\_\-productes}}
+\subsubsection[{afegir\-\_\-producte\-\_\-cjt\-\_\-productes}]{\setlength{\rightskip}{0pt plus 5cm}void Conjunt\-\_\-productes\-::afegir\-\_\-producte\-\_\-cjt\-\_\-productes (
+\begin{DoxyParamCaption}
+\item[{string}]{producte\-\_\-id, }
+\item[{double}]{preu, }
+\item[{string}]{seccio, }
+\item[{int}]{temps\-\_\-cobrament}
+\end{DoxyParamCaption}
+)}}\label{class_conjunt__productes_a2b52bd25ae0c261a74ed8e31737b7dcb}
+
+
+Destructora per defcte. 
+
+
+
+Definició a la línia 13 del fitxer Conjunt\-\_\-productes.\-cc.
+
+
+\begin{DoxyCode}
+13                                                                                                            
+                    \{
+14 
+15   \hyperlink{class_producte}{Producte} p(\hyperlink{structseccio}{seccio},temps\_cobrament,preu,producte\_id);
+16   conjunt\_prod.insert(make\_pair(producte\_id,p));
+17   ++nombre\_productes;
+18 \}
+\end{DoxyCode}
+\hypertarget{class_conjunt__productes_a881cfe5494d2fac0354fdc82636fc5ff}{\index{Conjunt\-\_\-productes@{Conjunt\-\_\-productes}!informacio\-\_\-producte@{informacio\-\_\-producte}}
+\index{informacio\-\_\-producte@{informacio\-\_\-producte}!Conjunt_productes@{Conjunt\-\_\-productes}}
+\subsubsection[{informacio\-\_\-producte}]{\setlength{\rightskip}{0pt plus 5cm}void Conjunt\-\_\-productes\-::informacio\-\_\-producte (
+\begin{DoxyParamCaption}
+\item[{string}]{producte\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{class_conjunt__productes_a881cfe5494d2fac0354fdc82636fc5ff}
+
+
+Afegeix un producte al conjunt de productes a partir dels seus atributs. 
+
+\begin{DoxyPrecond}{Precondició}
+temps\-\_\-cobrament $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+afegeix un producte al conjunt de productes a partir dels seus atributs 
+\end{DoxyPostcond}
+
+
+Definició a la línia 20 del fitxer Conjunt\-\_\-productes.\-cc.
+
+
+\begin{DoxyCode}
+20                                                               \{
+21     map<string, Producte>::const\_iterator it = conjunt\_prod.find(producte\_id);
+22     \textcolor{keywordflow}{if} (it != conjunt\_prod.end()) \{
+23         \hyperlink{class_producte}{Producte} aux = it-> second;
+24         aux.\hyperlink{class_producte_a8713d47b8527c1279a8c6442f56fa5cb}{escriure\_producte}();
+25   cout << endl;
+26     \}
+27     \textcolor{keywordflow}{else}
+28     cout << \textcolor{stringliteral}{"error"} << endl << endl;
+29 \}
+\end{DoxyCode}
+\hypertarget{class_conjunt__productes_ac60c068189c58f6f0c7e6e89fddd1feb}{\index{Conjunt\-\_\-productes@{Conjunt\-\_\-productes}!id\-\_\-temps\-\_\-cobrament@{id\-\_\-temps\-\_\-cobrament}}
+\index{id\-\_\-temps\-\_\-cobrament@{id\-\_\-temps\-\_\-cobrament}!Conjunt_productes@{Conjunt\-\_\-productes}}
+\subsubsection[{id\-\_\-temps\-\_\-cobrament}]{\setlength{\rightskip}{0pt plus 5cm}int Conjunt\-\_\-productes\-::id\-\_\-temps\-\_\-cobrament (
+\begin{DoxyParamCaption}
+\item[{string}]{identificador}
+\end{DoxyParamCaption}
+)}}\label{class_conjunt__productes_ac60c068189c58f6f0c7e6e89fddd1feb}
+
+
+Imprimeix la informaci� d'un producte. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S'imprimeix la informacio del producte (nom, preu, seccio i temps\-\_\-cobrament) si pertany al p.\-implicit. Si no, imprimeix \char`\"{}error\char`\"{} pel canal estandard de sortida 
+\end{DoxyPostcond}
+
+
+Definició a la línia 31 del fitxer Conjunt\-\_\-productes.\-cc.
+
+
+\begin{DoxyCode}
+31                                                               \{
+32     map<string, Producte>::const\_iterator it = conjunt\_prod.find(identificador);
+33     \textcolor{keywordflow}{if} (it != conjunt\_prod.end()) \{
+34         \hyperlink{class_producte}{Producte} aux = it -> second;
+35         \textcolor{keywordflow}{return} aux.\hyperlink{class_producte_abe6eadf62ca2c47dc3cabd5d561d8fdd}{consultar\_temps\_producte}();
+36     \}
+37     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} 0;
+38 \}
+\end{DoxyCode}
+\hypertarget{class_conjunt__productes_ac093ff495a1d81d3bd0fe5bb72400b87}{\index{Conjunt\-\_\-productes@{Conjunt\-\_\-productes}!consultar\-\_\-seccio\-\_\-producte@{consultar\-\_\-seccio\-\_\-producte}}
+\index{consultar\-\_\-seccio\-\_\-producte@{consultar\-\_\-seccio\-\_\-producte}!Conjunt_productes@{Conjunt\-\_\-productes}}
+\subsubsection[{consultar\-\_\-seccio\-\_\-producte}]{\setlength{\rightskip}{0pt plus 5cm}string Conjunt\-\_\-productes\-::consultar\-\_\-seccio\-\_\-producte (
+\begin{DoxyParamCaption}
+\item[{string}]{producte\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{class_conjunt__productes_ac093ff495a1d81d3bd0fe5bb72400b87}
+
+
+Retorna el temps de cobrament d'un producte. 
+
+\begin{DoxyPrecond}{Precondició}
+El producte existeix al conjunt 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el temps que es triga en cobrar el producte amb producte\-\_\-id = identificador 
+\end{DoxyPostcond}
+
+
+Definició a la línia 40 del fitxer Conjunt\-\_\-productes.\-cc.
+
+
+\begin{DoxyCode}
+40                                                                       \{
+41     map<string, Producte>::const\_iterator it = conjunt\_prod.find(producte\_id);
+42     \textcolor{keywordflow}{if} (it != conjunt\_prod.end()) \{
+43         \hyperlink{class_producte}{Producte} aux = it-> second;
+44         \textcolor{keywordflow}{return} aux.\hyperlink{class_producte_a8fb3df376d814057012a9a71e94833c2}{consulta\_graella}();
+45     \}
+46     \textcolor{keywordflow}{return} 0;
+47 \}
+\end{DoxyCode}
+
+
+La documentació d'aquesta classe es va generar a partir dels següents fitxers\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_conjunt__productes_8hh}{Conjunt\-\_\-productes.\-hh}\item 
+\hyperlink{_conjunt__productes_8cc}{Conjunt\-\_\-productes.\-cc}\end{DoxyCompactItemize}

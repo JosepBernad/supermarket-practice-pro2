@@ -1,0 +1,427 @@
+\hypertarget{class_supermercat}{\section{Referència de la Classe Supermercat}
+\label{class_supermercat}\index{Supermercat@{Supermercat}}
+}
+
+
+Respresenta un \hyperlink{class_supermercat}{Supermercat} com a contenidor de Matriu de sets i un vector de Caixes.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_supermercat_a75b379afc60226b827c9451f552ad0b3}{Supermercat} ()
+\item 
+\hyperlink{class_supermercat_a59d88ce643de6aaa00029720dd0083a4}{Supermercat} (int rengles\-\_\-p, int columnes\-\_\-p, int total\-\_\-caixes\-\_\-p, int nombre\-\_\-productes\-\_\-p)
+\begin{DoxyCompactList}\small\item\em Consutructora per defecte. \end{DoxyCompactList}\item 
+\hyperlink{class_supermercat_aced4a69ecc50245ff3742739d891dfa6}{$\sim$\-Supermercat} ()
+\begin{DoxyCompactList}\small\item\em Crea un \hyperlink{class_supermercat}{Supermercat} amb els parametres rebuts. \end{DoxyCompactList}\item 
+void \hyperlink{class_supermercat_ad983ec7f34920bbbd56225b6c21af2b3}{afegir\-\_\-parametres\-\_\-supermercat} (int r, int col, int x, int n)
+\begin{DoxyCompactList}\small\item\em Destructora per defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_supermercat_a4221184ce444ba79ae5328cd1bb090b8}{actualitza} (\hyperlink{class_temps}{Temps} hora)
+\begin{DoxyCompactList}\small\item\em Afegeix els par�metres de inicialitzacio al supermercat. \end{DoxyCompactList}\item 
+void \hyperlink{class_supermercat_a50617aa35054fdd871b97428a7b5aed4}{assigna\-\_\-caixa} (int r, int n, \hyperlink{class_client}{Client} \&c)
+\begin{DoxyCompactList}\small\item\em Actualitza les caixes a la hora actual. \end{DoxyCompactList}\item 
+void \hyperlink{class_supermercat_aac66c4aa58a3d095f4baa10a3ea05f1b}{simulacio} (int n, \hyperlink{class_conjunt__clients}{Conjunt\-\_\-clients} \&c)
+\begin{DoxyCompactList}\small\item\em Actualitza les caixes a la hora actual. \end{DoxyCompactList}\item 
+void \hyperlink{class_supermercat_add121e2ed13fa94e85accf3dc60cfa44}{productes\-\_\-seccio} (string \hyperlink{structseccio}{seccio})
+\begin{DoxyCompactList}\small\item\em Simula diferents configuracions amb x caixes rapides i y caixes normals. \end{DoxyCompactList}\item 
+void \hyperlink{class_supermercat_abe76363df7d0d1a759a4539d70187204}{afegir\-\_\-n\-\_\-productes} (int n, \hyperlink{class_conjunt__productes}{Conjunt\-\_\-productes} \&cp)
+\begin{DoxyCompactList}\small\item\em Imprimeix per pantalla els productes d'una determinada seccio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Respresenta un \hyperlink{class_supermercat}{Supermercat} com a contenidor de Matriu de sets i un vector de Caixes. 
+
+Definició a la línia 27 del fitxer Supermercat.\-hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\hypertarget{class_supermercat_a75b379afc60226b827c9451f552ad0b3}{\index{Supermercat@{Supermercat}!Supermercat@{Supermercat}}
+\index{Supermercat@{Supermercat}!Supermercat@{Supermercat}}
+\subsubsection[{Supermercat}]{\setlength{\rightskip}{0pt plus 5cm}Supermercat\-::\-Supermercat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_supermercat_a75b379afc60226b827c9451f552ad0b3}
+
+
+Definició a la línia 19 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+19 \{\}
+\end{DoxyCode}
+\hypertarget{class_supermercat_a59d88ce643de6aaa00029720dd0083a4}{\index{Supermercat@{Supermercat}!Supermercat@{Supermercat}}
+\index{Supermercat@{Supermercat}!Supermercat@{Supermercat}}
+\subsubsection[{Supermercat}]{\setlength{\rightskip}{0pt plus 5cm}Supermercat\-::\-Supermercat (
+\begin{DoxyParamCaption}
+\item[{int}]{rengles\-\_\-p, }
+\item[{int}]{columnes\-\_\-p, }
+\item[{int}]{total\-\_\-caixes\-\_\-p, }
+\item[{int}]{nombre\-\_\-productes\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_supermercat_a59d88ce643de6aaa00029720dd0083a4}
+
+
+Consutructora per defecte. 
+
+
+
+Definició a la línia 5 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+6 \{
+7     rengles = rengles\_p;
+8     nombre\_productes = nombre\_productes\_p;
+9     columnes = columnes\_p;
+10     total\_caixes = total\_caixes\_p;
+11     nombre\_clients = 0;
+12     nombre\_caixes\_rapides = 0;
+13     nombre\_caixes\_normals = 0;
+14     seccions = vector<vector<set<string> > >(rengles\_p, vector<set<string> >(columnes\_p));
+15     caixes = vector<Caixa> (total\_caixes);
+16 \}
+\end{DoxyCode}
+\hypertarget{class_supermercat_aced4a69ecc50245ff3742739d891dfa6}{\index{Supermercat@{Supermercat}!$\sim$\-Supermercat@{$\sim$\-Supermercat}}
+\index{$\sim$\-Supermercat@{$\sim$\-Supermercat}!Supermercat@{Supermercat}}
+\subsubsection[{$\sim$\-Supermercat}]{\setlength{\rightskip}{0pt plus 5cm}Supermercat\-::$\sim$\-Supermercat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_supermercat_aced4a69ecc50245ff3742739d891dfa6}
+
+
+Crea un \hyperlink{class_supermercat}{Supermercat} amb els parametres rebuts. 
+
+\begin{DoxyPrecond}{Precondició}
+rengles\-\_\-p...nombre\-\_\-productes\-\_\-p $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+crea un \hyperlink{class_supermercat}{Supermercat} amb tots els parametres rebuts, nombre\-\_\-caixes\-\_\-normals = = nombre\-\_\-caixes\-\_\-rapides = 0 i \hyperlink{class_conjunt__productes}{Conjunt\-\_\-productes} buit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 21 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+21 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\hypertarget{class_supermercat_ad983ec7f34920bbbd56225b6c21af2b3}{\index{Supermercat@{Supermercat}!afegir\-\_\-parametres\-\_\-supermercat@{afegir\-\_\-parametres\-\_\-supermercat}}
+\index{afegir\-\_\-parametres\-\_\-supermercat@{afegir\-\_\-parametres\-\_\-supermercat}!Supermercat@{Supermercat}}
+\subsubsection[{afegir\-\_\-parametres\-\_\-supermercat}]{\setlength{\rightskip}{0pt plus 5cm}void Supermercat\-::afegir\-\_\-parametres\-\_\-supermercat (
+\begin{DoxyParamCaption}
+\item[{int}]{r, }
+\item[{int}]{col, }
+\item[{int}]{x, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_supermercat_ad983ec7f34920bbbd56225b6c21af2b3}
+
+
+Destructora per defecte. 
+
+
+
+Definició a la línia 24 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+25 \{
+26     rengles = r;
+27     columnes = col;
+28     total\_caixes = x;
+29     nombre\_productes = n;
+30     seccions = vector<vector<set<string> > >(r, vector<set<string> >(col));
+31 \}
+\end{DoxyCode}
+\hypertarget{class_supermercat_a4221184ce444ba79ae5328cd1bb090b8}{\index{Supermercat@{Supermercat}!actualitza@{actualitza}}
+\index{actualitza@{actualitza}!Supermercat@{Supermercat}}
+\subsubsection[{actualitza}]{\setlength{\rightskip}{0pt plus 5cm}void Supermercat\-::actualitza (
+\begin{DoxyParamCaption}
+\item[{{\bf Temps}}]{hora}
+\end{DoxyParamCaption}
+)}}\label{class_supermercat_a4221184ce444ba79ae5328cd1bb090b8}
+
+
+Afegeix els par�metres de inicialitzacio al supermercat. 
+
+\begin{DoxyPrecond}{Precondició}
+el supermercat ha estat inicialitzat, i r .. n $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+afegeix els par�metres de inicialitzacio al supermercat 
+\end{DoxyPostcond}
+
+
+Definició a la línia 85 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+86 \{
+87     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0 ; i < caixes.size() ; ++i)
+88     \{
+89         \textcolor{keywordflow}{while} (caixes[i].n\_clients > 0 and hora.\hyperlink{class_temps_aa9776ffab539b0a5516ab164394c256c}{puc\_borrar}(caixes[i].instant\_proxim))
+90         \{
+91             --caixes[i].n\_clients;
+92         \}
+93     \}
+94 \}
+\end{DoxyCode}
+\hypertarget{class_supermercat_a50617aa35054fdd871b97428a7b5aed4}{\index{Supermercat@{Supermercat}!assigna\-\_\-caixa@{assigna\-\_\-caixa}}
+\index{assigna\-\_\-caixa@{assigna\-\_\-caixa}!Supermercat@{Supermercat}}
+\subsubsection[{assigna\-\_\-caixa}]{\setlength{\rightskip}{0pt plus 5cm}void Supermercat\-::assigna\-\_\-caixa (
+\begin{DoxyParamCaption}
+\item[{int}]{r, }
+\item[{int}]{n, }
+\item[{{\bf Client} \&}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_supermercat_a50617aa35054fdd871b97428a7b5aed4}
+
+
+Actualitza les caixes a la hora actual. 
+
+\begin{DoxyPrecond}{Precondició}
+hora.\-hores ... hora.\-segons $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Actualitza les caixes a l'hora actual de \hyperlink{class_client}{Client} seguent no assignat 
+\end{DoxyPostcond}
+
+
+Definició a la línia 118 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+119 \{
+120     \textcolor{keywordtype}{bool} menys\_deu = (c.\hyperlink{class_client_af3c1754dbbd0593c30cb6ffa8ddef086}{consultar\_productes\_client}() <= 10);
+121     
+122     \textcolor{keywordtype}{int} caixa\_final = 0;
+123     \textcolor{keywordflow}{if} (r != 0)
+124     \{
+125         \textcolor{keywordflow}{if} (!menys\_deu) caixa\_final = r;
+126     \}
+127     
+128     \textcolor{keywordtype}{bool} trobat = \textcolor{keyword}{false};
+129     
+130     \textcolor{keywordtype}{int} it\_out = n+r - 1;
+131     
+132     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = n+r-1; i >= caixa\_final and !trobat; i--) \{
+133         \textcolor{keywordflow}{if} (caixes[i].n\_clients == 0) \{
+134             trobat = \textcolor{keyword}{true};
+135             ++caixes[i].n\_clients;
+136             c.\hyperlink{class_client_ab9604d012fe1763e9b26c0579354d7c8}{modificar\_temps\_caminar}((n+r)-1 - i);
+137             c.\hyperlink{class_client_aa3c794239505f1996f1468a542548461}{modificar\_caixa}(n+r-i);
+138             \hyperlink{class_temps}{Temps} t\_aux = c.\hyperlink{class_client_ae56fc1628dfb8b857a2cc0663b4989e8}{consultar\_instant\_tiquet}();
+139             t\_aux.\hyperlink{class_temps_af0d27c50348e09dc9c78cfe82afd3dde}{afegeix\_int}(n+r-1-i);
+140             c.\hyperlink{class_client_afb5ec40f5410ec9766ca3c225add1d93}{modificar\_instant\_cua}(t\_aux);
+141             t\_aux.\hyperlink{class_temps_a7870740e44a9a07df7eb7558822e426e}{modifica\_temps}(0,0,0);
+142             c.\hyperlink{class_client_a8ea63f73665f9384629d2a6ff46bb252}{modificar\_temps\_espera\_cua}(t\_aux);
+143             t\_aux.\hyperlink{class_temps_a875a45e7046f4183c5d161cb0733dbb7}{suma\_temps}(c.\hyperlink{class_client_a0a7ef70f7ad923d76f0982aa616ebf0c}{consultar\_instant\_cua}(),t\_aux,t\_aux);
+144             c.\hyperlink{class_client_a1718ce0ec5713509921963aaa48f6417}{modificar\_instant\_caixa}(t\_aux);
+145             t\_aux.\hyperlink{class_temps_a875a45e7046f4183c5d161cb0733dbb7}{suma\_temps}(t\_aux,c.\hyperlink{class_client_a2ccbf48235fab996aff2bb9d31e03b67}{consultar\_temps\_cobrament}(),t\_aux);
+146             c.\hyperlink{class_client_abb16904da37ead035413d5595889af2f}{modificar\_instant\_acabament}(t\_aux);
+147             caixes[i].instant\_proxim = t\_aux;
+148             caixes[i].instant\_proxim.afegeix\_int(1);
+149         \}
+150         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (caixes[i].n\_clients < caixes[it\_out].n\_clients) it\_out = i;
+151     \}
+152     \textcolor{keywordflow}{if} (!trobat) \{
+153         c.\hyperlink{class_client_ab9604d012fe1763e9b26c0579354d7c8}{modificar\_temps\_caminar}((n+r)-1 - it\_out);
+154         
+155         \textcolor{comment}{//cout << "Temps caminar: " << (n+r)-1 - it\_out << endl;}
+156         
+157         ++caixes[it\_out].n\_clients;
+158         c.\hyperlink{class_client_aa3c794239505f1996f1468a542548461}{modificar\_caixa}(n+r-it\_out);
+159         
+160        \textcolor{comment}{// cout << "Caixa: " << 12 - (n+r) - it\_out +1 << endl;}
+161         
+162         \hyperlink{class_temps}{Temps} t\_aux = c.\hyperlink{class_client_ae56fc1628dfb8b857a2cc0663b4989e8}{consultar\_instant\_tiquet}();
+163         
+164         \textcolor{comment}{/*cout << "Instant\_tiquet: ";}
+165 \textcolor{comment}{        t\_aux.escriu\_temps();}
+166 \textcolor{comment}{        cout << endl;*/}
+167         
+168         t\_aux.\hyperlink{class_temps_af0d27c50348e09dc9c78cfe82afd3dde}{afegeix\_int}(n+r-1-it\_out);
+169         c.\hyperlink{class_client_afb5ec40f5410ec9766ca3c225add1d93}{modificar\_instant\_cua}(t\_aux);
+170         
+171         \textcolor{comment}{/*cout << "Instant cua: ";}
+172 \textcolor{comment}{        t\_aux.escriu\_temps();}
+173 \textcolor{comment}{        cout << endl;*/}
+174         
+175 
+176         t\_aux = \hyperlink{_supermercat_8cc_a8cd29707c0a2d6f7207858b0f98573e4}{temps\_espera\_aux}(t\_aux,caixes[it\_out].instant\_proxim);
+177         c.\hyperlink{class_client_a8ea63f73665f9384629d2a6ff46bb252}{modificar\_temps\_espera\_cua}(t\_aux);
+178 
+179         
+180         \textcolor{comment}{/*cout << "Temps espera: ";}
+181 \textcolor{comment}{        t\_aux.escriu\_temps();}
+182 \textcolor{comment}{        cout << endl;*/}
+183         
+184         t\_aux.\hyperlink{class_temps_a875a45e7046f4183c5d161cb0733dbb7}{suma\_temps}(t\_aux,c.\hyperlink{class_client_a0a7ef70f7ad923d76f0982aa616ebf0c}{consultar\_instant\_cua}(),t\_aux);
+185         t\_aux.\hyperlink{class_temps_af0d27c50348e09dc9c78cfe82afd3dde}{afegeix\_int}(-1);
+186         c.\hyperlink{class_client_a1718ce0ec5713509921963aaa48f6417}{modificar\_instant\_caixa}(t\_aux);
+187         
+188         \textcolor{comment}{/*cout << "Instant caixa: ";}
+189 \textcolor{comment}{        t\_aux.escriu\_temps();}
+190 \textcolor{comment}{        cout << endl;*/}
+191         
+192         t\_aux.\hyperlink{class_temps_a875a45e7046f4183c5d161cb0733dbb7}{suma\_temps}(t\_aux,c.\hyperlink{class_client_a2ccbf48235fab996aff2bb9d31e03b67}{consultar\_temps\_cobrament}(),t\_aux);
+193         c.\hyperlink{class_client_abb16904da37ead035413d5595889af2f}{modificar\_instant\_acabament}(t\_aux);
+194         
+195         \textcolor{comment}{/*cout << "Instant acabament: ";}
+196 \textcolor{comment}{        t\_aux.escriu\_temps();}
+197 \textcolor{comment}{        cout << endl;*/}
+198         
+199         t\_aux.\hyperlink{class_temps_af0d27c50348e09dc9c78cfe82afd3dde}{afegeix\_int}(1);
+200         caixes[it\_out].instant\_proxim = t\_aux;
+201         
+202         \textcolor{comment}{/*cout << "Instant proxim: ";}
+203 \textcolor{comment}{        t\_aux.escriu\_temps();}
+204 \textcolor{comment}{        cout << endl;*/}
+205     \}
+206 
+207 \}
+\end{DoxyCode}
+\hypertarget{class_supermercat_aac66c4aa58a3d095f4baa10a3ea05f1b}{\index{Supermercat@{Supermercat}!simulacio@{simulacio}}
+\index{simulacio@{simulacio}!Supermercat@{Supermercat}}
+\subsubsection[{simulacio}]{\setlength{\rightskip}{0pt plus 5cm}void Supermercat\-::simulacio (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{{\bf Conjunt\-\_\-clients} \&}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_supermercat_aac66c4aa58a3d095f4baa10a3ea05f1b}
+
+
+Actualitza les caixes a la hora actual. 
+
+\begin{DoxyPrecond}{Precondició}
+r,n $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Assigna una caixa al \hyperlink{class_client}{Client} c, que passa a tenir una caixa assignada 
+\end{DoxyPostcond}
+
+
+Definició a la línia 209 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+210 \{
+211     \textcolor{keywordtype}{int} rap, nor;
+212     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0 ; i < n ; ++i)     \textcolor{comment}{//Combinacions de caixes}
+213     \{
+214         cin >> nor >> rap;
+215         caixes = vector<Caixa> (rap+nor);
+216         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0 ; j < nor+rap ; ++j)
+217             caixes[j].n\_clients = 0;
+218         \textcolor{keywordtype}{int} nc = cc.consultar\_nombre\_clients();
+219         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0 ; j < nc ; ++j)
+220         \{
+221             \hyperlink{class_temps}{Temps} t = cc.client\_posicio\_i(j).consultar\_instant\_tiquet();
+222             \hyperlink{class_supermercat_a4221184ce444ba79ae5328cd1bb090b8}{actualitza}(t);
+223             \hyperlink{class_client}{Client} c\_aux = cc.client\_posicio\_i(j);
+224             \hyperlink{class_supermercat_a50617aa35054fdd871b97428a7b5aed4}{assigna\_caixa}(rap,nor,c\_aux);
+225             cc.modificar\_client\_i\_essim(j, c\_aux);
+226 
+227         \}
+228         cc.sortida\_clients(total\_caixes);
+229     \}
+230     cout << endl;
+231 \}
+\end{DoxyCode}
+\hypertarget{class_supermercat_add121e2ed13fa94e85accf3dc60cfa44}{\index{Supermercat@{Supermercat}!productes\-\_\-seccio@{productes\-\_\-seccio}}
+\index{productes\-\_\-seccio@{productes\-\_\-seccio}!Supermercat@{Supermercat}}
+\subsubsection[{productes\-\_\-seccio}]{\setlength{\rightskip}{0pt plus 5cm}void Supermercat\-::productes\-\_\-seccio (
+\begin{DoxyParamCaption}
+\item[{string}]{seccio}
+\end{DoxyParamCaption}
+)}}\label{class_supermercat_add121e2ed13fa94e85accf3dc60cfa44}
+
+
+Simula diferents configuracions amb x caixes rapides i y caixes normals. 
+
+\begin{DoxyPrecond}{Precondició}
+nombre\-\_\-simulacions $>$ 0, caixes\-\_\-rapides+caixes\-\_\-normals = total\-\_\-caixes 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+imprimieix per pantalla els temps en mitjana del temps mitja de pagaments dels Clients en les n configuracions 
+\end{DoxyPostcond}
+
+
+Definició a la línia 34 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+35 \{
+36     \textcolor{keywordtype}{int} x, y;
+37     x = \hyperlink{structseccio}{seccio}[0] - \textcolor{charliteral}{'A'};
+38     y = \hyperlink{structseccio}{seccio}[1] - \textcolor{charliteral}{'0'} - 1;
+39     \textcolor{keywordflow}{if} (x <= rengles and y <= columnes and x >= 0 and y >= 0)
+40     \{
+41         \textcolor{keywordflow}{if} (!seccions[x][y].empty())
+42         \{
+43             set<string>::iterator it = seccions[x][y].begin();
+44             set<string>::iterator it\_aux = seccions[x][y].end();
+45             \textcolor{keywordflow}{while} (it != it\_aux)
+46             \{
+47                 cout << *it << endl;
+48                 ++it;
+49             \}
+50         \}
+51         \textcolor{keywordflow}{else}
+52             cout << \textcolor{stringliteral}{"seccio buida"} << endl;
+53     \}
+54     \textcolor{keywordflow}{else}
+55         cout << \textcolor{stringliteral}{"error3"} << endl;
+56     cout << endl;
+57 \}
+\end{DoxyCode}
+\hypertarget{class_supermercat_abe76363df7d0d1a759a4539d70187204}{\index{Supermercat@{Supermercat}!afegir\-\_\-n\-\_\-productes@{afegir\-\_\-n\-\_\-productes}}
+\index{afegir\-\_\-n\-\_\-productes@{afegir\-\_\-n\-\_\-productes}!Supermercat@{Supermercat}}
+\subsubsection[{afegir\-\_\-n\-\_\-productes}]{\setlength{\rightskip}{0pt plus 5cm}void Supermercat\-::afegir\-\_\-n\-\_\-productes (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{{\bf Conjunt\-\_\-productes} \&}]{cp}
+\end{DoxyParamCaption}
+)}}\label{class_supermercat_abe76363df7d0d1a759a4539d70187204}
+
+
+Imprimeix per pantalla els productes d'una determinada seccio. 
+
+\begin{DoxyPrecond}{Precondició}
+Exiteix la seccio al \hyperlink{class_supermercat}{Supermercat} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+imprimieix per pantalla els productes de la seccio 
+\end{DoxyPostcond}
+
+
+Definició a la línia 67 del fitxer Supermercat.\-cc.
+
+
+\begin{DoxyCode}
+68 \{
+69     \textcolor{keywordtype}{string} producte\_id, \hyperlink{structseccio}{seccio};
+70     \textcolor{keywordtype}{double} preu;
+71     \textcolor{keywordtype}{int} temps\_cobrament;
+72     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0 ; i < n ; ++i)
+73     \{
+74         cin >> producte\_id >> preu >> seccio >> temps\_cobrament;
+75         \hyperlink{_supermercat_8cc_a40c9e72e542bee4460d1a786adfb6eeb}{afegir\_producte\_supermercat}(producte\_id,seccio,seccions);
+76         cp.\hyperlink{class_conjunt__productes_a2b52bd25ae0c261a74ed8e31737b7dcb}{afegir\_producte\_cjt\_productes}(producte\_id, preu, seccio, 
+      temps\_cobrament);
+77     \}
+78 \}
+\end{DoxyCode}
+
+
+La documentació d'aquesta classe es va generar a partir dels següents fitxers\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_supermercat_8hh}{Supermercat.\-hh}\item 
+\hyperlink{_supermercat_8cc}{Supermercat.\-cc}\end{DoxyCompactItemize}

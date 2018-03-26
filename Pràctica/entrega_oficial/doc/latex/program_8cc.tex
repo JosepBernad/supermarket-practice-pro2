@@ -1,0 +1,126 @@
+\hypertarget{program_8cc}{\section{Referència del Fitxer program.\-cc}
+\label{program_8cc}\index{program.\-cc@{program.\-cc}}
+}
+Inclou el graf de dependències per a program.\-cc\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funcions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentació de les Funcions}
+\hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{program.\-cc@{program.\-cc}!main@{main}}
+\index{main@{main}!program.cc@{program.\-cc}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definició a la línia 5 del fitxer program.\-cc.
+
+
+\begin{DoxyCode}
+5            \{
+6     \textcolor{keywordtype}{string} p;
+7     \hyperlink{class_supermercat}{Supermercat} s;
+8     \hyperlink{class_conjunt__productes}{Conjunt\_productes} cp;
+9     \hyperlink{class_conjunt__productes}{Conjunt\_productes} cp\_aux;   \textcolor{comment}{//sempre buit}
+10     \hyperlink{class_conjunt__clients}{Conjunt\_clients} cc;
+11     \hyperlink{class_conjunt__clients}{Conjunt\_clients} cc\_aux;     \textcolor{comment}{//sempre buit}
+12     \textcolor{keywordtype}{int} col,rengles, caixes, n;
+13     cin >> p;
+14     \textcolor{keywordtype}{bool} ini\_supermercat, ini\_clients;
+15     ini\_supermercat = ini\_clients = \textcolor{keyword}{false};
+16     \textcolor{keywordflow}{while} (p != \textcolor{stringliteral}{"sortir"}) \{
+17         \textcolor{keywordflow}{if} (p == \textcolor{stringliteral}{"inicialitzar"}) \{
+18             ini\_supermercat = \textcolor{keyword}{true};
+19             ini\_clients = \textcolor{keyword}{false};
+20             cin >> rengles >> col >> caixes >> n;
+21             s.\hyperlink{class_supermercat_ad983ec7f34920bbbd56225b6c21af2b3}{afegir\_parametres\_supermercat}(rengles,col,caixes,n);
+22             cp = cp\_aux;
+23             s.\hyperlink{class_supermercat_abe76363df7d0d1a759a4539d70187204}{afegir\_n\_productes}(n,cp);  
+24         \}
+25         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p == \textcolor{stringliteral}{"carregar"}) \{
+26             \textcolor{keywordtype}{int} n\_clients;
+27             cin >> n\_clients;
+28             cc = cc\_aux;
+29             \textcolor{keywordflow}{if} (ini\_supermercat)
+30             \{
+31                 ini\_clients = \textcolor{keyword}{true};
+32                 cc.\hyperlink{class_conjunt__clients_adb51222eb8d58efbf90a6229409d88d2}{afegir\_n\_clients}(n\_clients, cp);
+33             \}
+34             \textcolor{keywordflow}{else}
+35                 cout << \textcolor{stringliteral}{"error"} << endl;
+36         \}
+37         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p == \textcolor{stringliteral}{"informacio"}) \{
+38             \textcolor{keywordtype}{string} id;
+39             cin >> id;
+40             cout << \textcolor{stringliteral}{"informacio "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{":"} << endl;
+41             \textcolor{keywordflow}{if} (ini\_supermercat)
+42                 cp.\hyperlink{class_conjunt__productes_a881cfe5494d2fac0354fdc82636fc5ff}{informacio\_producte}(\textcolor{keywordtype}{id});
+43             \textcolor{keywordflow}{else}
+44                 cout << \textcolor{stringliteral}{"error"} << endl << endl;
+45         \}
+46         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p == \textcolor{stringliteral}{"productes"}) \{
+47             \textcolor{keywordtype}{string} \hyperlink{structseccio}{seccio};
+48             cin >> seccio;
+49             cout << \textcolor{stringliteral}{"productes "} << seccio << \textcolor{stringliteral}{":"} << endl;
+50             \textcolor{keywordflow}{if} (ini\_supermercat)
+51             \{
+52                 \textcolor{keywordflow}{if} ((seccio[0] - \textcolor{charliteral}{'A'} > rengles) or (col - \textcolor{keywordtype}{int}(seccio[1]-\textcolor{charliteral}{'0'}) < 0)) \{
+53                     cout << \textcolor{stringliteral}{"error"} << endl << endl;
+54                 \}
+55                 \textcolor{keywordflow}{else}
+56                     s.\hyperlink{class_supermercat_add121e2ed13fa94e85accf3dc60cfa44}{productes\_seccio}(seccio);
+57             \}
+58             \textcolor{keywordflow}{else}
+59                 cout << \textcolor{stringliteral}{"error"} << endl << endl;
+60         \}
+61         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p == \textcolor{stringliteral}{"millor"}) \{
+62             cin >> p;
+63             \textcolor{keywordflow}{if} (p == \textcolor{stringliteral}{"cami"}) \{
+64                 \textcolor{keywordtype}{int} comprador\_id;
+65                 cin >> comprador\_id;
+66                 cout << \textcolor{stringliteral}{"millor cami "} << comprador\_id << \textcolor{stringliteral}{":"} << endl;
+67                 \textcolor{keywordflow}{if} (ini\_supermercat and ini\_clients)
+68                     cc.\hyperlink{class_conjunt__clients_a1ee4708cf975dc683f15f7cfb60cb146}{consultar\_millor\_cami\_client}(comprador\_id,col);
+69                 \textcolor{keywordflow}{else}
+70                 \{
+71                     \textcolor{comment}{//cout << "Supermercat: " << ini\_supermercat << " - Clients: " << ini\_clients << endl;}
+72                     cout << \textcolor{stringliteral}{"error"} << endl << endl;
+73                 \}
+74             \}
+75             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error"} << endl << endl;
+76         \}
+77         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p == \textcolor{stringliteral}{"simular"}) \{
+78             cin >> p;
+79             \textcolor{keywordflow}{if} (p == \textcolor{stringliteral}{"pagament"}) \{
+80                 cout << \textcolor{stringliteral}{"simular pagament:"} << endl;
+81                 \textcolor{keywordflow}{if}(ini\_supermercat and ini\_clients)
+82                 \{
+83                     \textcolor{keywordtype}{int} n\_simulacions;
+84                     cin >> n\_simulacions;
+85                     s.\hyperlink{class_supermercat_aac66c4aa58a3d095f4baa10a3ea05f1b}{simulacio}(n\_simulacions,cc);
+86                     
+87                 \}
+88                 \textcolor{keywordflow}{else}
+89                     cout << \textcolor{stringliteral}{"error"} << endl << endl;
+90             \}
+91             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error"} << endl << endl;
+92         \}
+93         
+94         \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error"} << endl << endl;
+95         cin >> p;
+96   \}
+97 
+98 \}
+\end{DoxyCode}
